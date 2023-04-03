@@ -7,7 +7,8 @@
 * Who are you?
 * Who am I?
 * Why is this important?
-* TODO
+* The way we communicate.
+* The way we build and review software.
 * Takeaways.
 * Resources.
 
