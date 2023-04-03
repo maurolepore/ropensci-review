@@ -10,7 +10,6 @@
 * The way we communicate.
 * The way we build and review software.
 * Takeaways.
-* Resources.
 
 ## Who are you?
 
