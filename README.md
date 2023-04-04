@@ -76,7 +76,7 @@ open doors for others.
 * [Guide to building a package](https://devguide.ropensci.org/building.html).
 * [Guide to submitting a package](https://devguide.ropensci.org/authors-guide.html).
 * [Choose between different types of submission](https://github.com/ropensci/software-review/issues/new/choose).
-* [Example of a submission that was (kindly) out of scope](https://github.com/ropensci/software-review/issues/584).
+* [Example of a submission that was (kindly) out of scope](https://github.com/ropensci/software-review/issues/584#issuecomment-1485388417).
 
 ## The way we build and review software: For reviewers
 
