@@ -53,6 +53,8 @@ And:
 > [Helping to improve software] in a kind and respectful way is just as
 important as the technical aspect -- Yani
 
+What do you think?
+
 ## The way we communicate: On kindness
 
 From [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/):
