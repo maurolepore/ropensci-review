@@ -10,7 +10,7 @@
 * How can this talk help you?
 * The way we communicate.
 * The way we build and review software.
-* Questions and comments
+* Questions and comments.
 * Takeaways.
 
 ## Who are you?
