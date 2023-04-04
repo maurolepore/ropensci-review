@@ -87,7 +87,7 @@ open doors for others.
 
 * [Guide for editors](https://devguide.ropensci.org/editorguide.html).
 * [Template for editors](https://devguide.ropensci.org/editortemplate.html).
-* [Bot help](https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673).
+* [`@ropensci-review-bot help`](https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673).
 
 ## Examples
 
