@@ -49,7 +49,7 @@ Here we will:
 [rOpenSci's software-review repo](https://github.com/ropensci/software-review) links to: 
 
 * Our [code of conduct](https://ropensci.org/code-of-conduct/): The way we communicate.
-* Our ["devguide"](https://devguide.ropensci.org/): The way we build and review software).
+* Our ["devguide"](https://devguide.ropensci.org/): The way we build and review software.
 
 Here we also see "why bother" but today we'll focus on "how" to do it.
 
