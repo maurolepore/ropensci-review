@@ -57,8 +57,6 @@ What do you think?
 
 ## The way we communicate: On kindness
 
-From [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/):
-
 > ### Everything in open source should be a series of kindnesses
 
 > You could view everything in [open source software] as a kindness that someone
@@ -69,6 +67,8 @@ things grounded and healthy.
 source makes demands it's like the person passing through the door criticizing
 how I held the door open. It ... leads to people no longer being willing to hold
 open doors for others.
+
+> -- [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
 ## The way we build and review software: Resources for authors
 
