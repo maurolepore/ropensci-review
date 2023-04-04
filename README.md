@@ -91,6 +91,8 @@ open doors for others.
 
 ## Questions and comments
 
+What questions and comments do you have?
+
 ## Takeaways
 
 * The process is complex but we can help.
