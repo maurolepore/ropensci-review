@@ -70,7 +70,7 @@ open doors for others.
 
 > -- [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
-## The way we build and review software: Resources for authors
+## The way we build and review software: For authors
 
 * [Package categories in scope for rOpenSci review](https://devguide.ropensci.org/policies.html#package-categories).
 * [Guide to building a package](https://devguide.ropensci.org/building.html).
@@ -78,12 +78,12 @@ open doors for others.
 * [Choose between different types of submission](https://github.com/ropensci/software-review/issues/new/choose).
 * [Example of a submission that was (kindly) out of scope](https://github.com/ropensci/software-review/issues/584).
 
-## The way we build and review software: Resources for reviewers
+## The way we build and review software: For reviewers
 
 * [Guide for reviewers](https://devguide.ropensci.org/reviewerguide.html).
 * [Template for reviewers](https://devguide.ropensci.org/reviewtemplate.html).
 
-## The way we build and review software: Resources for editors
+## The way we build and review software: For editors
 
 * [Guide for editors](https://devguide.ropensci.org/editorguide.html).
 * [Template for editors](https://devguide.ropensci.org/editortemplate.html).
