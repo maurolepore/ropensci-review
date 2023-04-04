@@ -4,11 +4,11 @@
 
 ## Outline
 
-* Who are you?
-* Who am I?
-* Why is this important?
+* Who are you and me?
+* How can this talk help you?
 * The way we communicate.
 * The way we build and review software.
+* Questions and comments
 * Takeaways.
 
 ## Who are you?
@@ -35,7 +35,7 @@ My roles at rOpenSci:
 * Chief-editor.
 * Mentor.
 
-## Why is this important?
+## How can this talk help you?
 
 The whole process is complex and can feel overwhelming. 
 
@@ -46,12 +46,15 @@ Here we will:
 
 ## The most important stuff
 
-[rOpenSci's software-review repo](https://github.com/ropensci/software-review) links to: 
+[rOpenSci's software-review repo](https://github.com/ropensci/software-review) links to our: 
 
-* Our [code of conduct](https://ropensci.org/code-of-conduct/): The way we communicate.
-* Our ["devguide"](https://devguide.ropensci.org/): The way we build and review software.
+* [Code of conduct](https://ropensci.org/code-of-conduct/): The way we communicate.
+* ["devguide"](https://devguide.ropensci.org/) and: The way we build and review software.
 
-Here we also see "why bother" but today we'll focus on "how" to do it.
+And:
+
+* Also shows "why" bother but today we'll focus on "how" to do it.
+* Seems to lack a link to our ["stats devguide"](https://stats-devguide.ropensci.org/).
 
 ## The way we communicate: Why is it so important?
 
@@ -62,25 +65,19 @@ TODO: Discuss
 
 ## The way we communicate: On kindness
 
-The article [Setting expectations for open source
-participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
+The article [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 says:
 
 > You could view everything in [open source software] as a kindness that someone
-has done for you and others.
+has done for you and others. Taking the altruistic view of open source keeps
+things grounded and healthy.
 
-> Taking the altruistic view of open source keeps things grounded and healthy.
+> It's like when I hold the door open for someone. (...) When someone in open
+source makes demands it's like the person passing through the door criticizing
+how I held the door open. It ... leads to people no longer being willing to hold
+open doors for others.
 
-> It's like when I hold the door open for someone. Ultimately I don't expect
-anything in return
-
-> But when someone in open source makes demands it's like the person passing
-through the door criticizing how I held the door open.
-
-> It's pointless and simply leads to people no longer being willing to hold open
-doors for others.
-
-## The way we build and review software: Authors
+## The way we build and review software: Resources for authors
 
 * [Package categories in scope for rOpenSci review](https://devguide.ropensci.org/policies.html#package-categories).
 * [Guide to building a package](https://devguide.ropensci.org/building.html).
@@ -88,22 +85,18 @@ doors for others.
 * [Choose between different types of submission](https://github.com/ropensci/software-review/issues/new/choose).
 * [Example of a submission that was (kindly) out of scope](https://github.com/ropensci/software-review/issues/584).
 
-TODO: Questions.
-
-## The way we build and review software: Reviewers
+## The way we build and review software: Resources for reviewers
 
 * [Guide for reviewers](https://devguide.ropensci.org/reviewerguide.html).
 * [Template for reviewers](https://devguide.ropensci.org/reviewtemplate.html).
 
-TODO: Questions.
-
-## The way we build and review software: Editors
+## The way we build and review software: Resources for editors
 
 * [Guide for editors](https://devguide.ropensci.org/editorguide.html).
 * [Template for editors](https://devguide.ropensci.org/editortemplate.html).
 * [Bot help](https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673).
 
-TODO: Questions.
+## Questions and comments
 
 ## Takeaways
 
