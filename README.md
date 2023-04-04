@@ -2,6 +2,8 @@
 
 *Mauro Lepore*
 
+### bit.ly/ropensci-review
+
 ## Outline
 
 * Who are you and me?
@@ -12,8 +14,6 @@
 * Takeaways.
 
 ## Who are you?
-
-You are:
 
 * An actual or potential community member, package author, reviewer or editor.
 * Someone who might want to try our process elsewhere.
