@@ -59,6 +59,8 @@ What do you think?
 
 From [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/):
 
+> ### Everything in open source should be a series of kindnesses
+
 > You could view everything in [open source software] as a kindness that someone
 has done for you and others. Taking the altruistic view of open source keeps
 things grounded and healthy.
