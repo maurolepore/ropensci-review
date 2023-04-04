@@ -53,12 +53,9 @@ And:
 > [Helping to improve software] in a kind and respectful way is just as
 important as the technical aspect -- Yani
 
-TODO: Discuss
-
 ## The way we communicate: On kindness
 
-The article [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
-says:
+From [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/):
 
 > You could view everything in [open source software] as a kindness that someone
 has done for you and others. Taking the altruistic view of open source keeps
