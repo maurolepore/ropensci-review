@@ -24,16 +24,8 @@ I build tools to help researchers get the most out of their data.
 
 Before I was a biologist.
 
-My roles at rOpenSci:
-
-* runconf participant.
-* Rejected author.
-* Co-author.
-* Reviewer.
-* Guest editor.
-* Editor.
-* Chief-editor.
-* Mentor.
+My roles at rOpenSci: runconf participant, rejected author, co-author, reviewer,
+guest editor, editor, chief-editor, mentor.
 
 ## How can this talk help you?
 
@@ -41,7 +33,7 @@ The whole process is complex and can feel overwhelming.
 
 Here we will:
 
-* Highlight and discuss what's most important.
+* Highlight what's most important.
 * Show you where you can find the rest.
 
 ## The most important stuff
