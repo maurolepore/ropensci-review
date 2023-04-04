@@ -46,10 +46,10 @@ Here we will:
 
 ## The most important stuff
 
-https://github.com/ropensci/software-review
+[rOpenSci's software-review repo](https://github.com/ropensci/software-review) links to: 
 
-* The way we communicate: https://ropensci.org/code-of-conduct/
-* The way we build and review software: https://devguide.ropensci.org/
+* Our [code of conduct](https://ropensci.org/code-of-conduct/): The way we communicate.
+* Our ["devguide"](https://devguide.ropensci.org/): The way we build and review software).
 
 Here we also see "why bother" but today we'll focus on "how" to do it.
 
@@ -60,12 +60,14 @@ important as the technical aspect -- Yani
 
 TODO: Discuss
 
-## The way we communicate: Setting expectations
+## The way we communicate: On kindness
 
-https://snarky.ca/setting-expectations-for-open-source-participation/amp/
+The article [Setting expectations for open source
+participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
+says:
 
-> You could view everything in OSS as a kindness that someone has done for you
-and others.
+> You could view everything in [open source software] as a kindness that someone
+has done for you and others.
 
 > Taking the altruistic view of open source keeps things grounded and healthy.
 
@@ -80,26 +82,26 @@ doors for others.
 
 ## The way we build and review software: Authors
 
-* Categories: https://devguide.ropensci.org/policies.html#package-categories
-* Guide to building: https://devguide.ropensci.org/building.html
-* Guide to submitting: https://devguide.ropensci.org/authors-guide.html
-* Submit: https://github.com/ropensci/software-review/issues
-* Example with kindness: https://github.com/ropensci/software-review/issues/584
+* [Package categories in scope for rOpenSci review](https://devguide.ropensci.org/policies.html#package-categories).
+* [Guide to building a package](https://devguide.ropensci.org/building.html).
+* [Guide to submitting a package](https://devguide.ropensci.org/authors-guide.html).
+* [Choose between different types of submission](https://github.com/ropensci/software-review/issues/new/choose).
+* [Example of a submission that was (kindly) out of scope](https://github.com/ropensci/software-review/issues/584).
 
 TODO: Questions.
 
 ## The way we build and review software: Reviewers
 
-* Guide: https://devguide.ropensci.org/reviewerguide.html
-* Template: https://devguide.ropensci.org/reviewtemplate.html
+* [Guide for reviewers](https://devguide.ropensci.org/reviewerguide.html).
+* [Template for reviewers](https://devguide.ropensci.org/reviewtemplate.html).
 
 TODO: Questions.
 
 ## The way we build and review software: Editors
 
-* Guide: https://devguide.ropensci.org/editorguide.html
-* Template: https://devguide.ropensci.org/editortemplate.html
-* Bot help: https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673
+* [Guide for editors](https://devguide.ropensci.org/editorguide.html).
+* [Template for editors](https://devguide.ropensci.org/editortemplate.html).
+* [Bot help](https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673).
 
 TODO: Questions.
 
@@ -111,4 +113,6 @@ TODO: Questions.
 
 ## Thanks
 
-https://ropensci.org/about/#team
+Mauro Lepore
+
+maurolepore@gmail.com
