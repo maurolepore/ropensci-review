@@ -92,7 +92,7 @@ open doors for others.
 ## Examples
 
 * [Kind and out of scope](https://github.com/ropensci/software-review/issues/584#issuecomment-1485388417).
-* [Kind and with constructive comments](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794)
+* [Kind and with constructive comments](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794).
 
 ## Questions and comments
 
