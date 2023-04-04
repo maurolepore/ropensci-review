@@ -2,7 +2,7 @@
 
 *Mauro Lepore*
 
-### bit.ly/ropensci-review
+### [bit.ly/ropensci-review](https://bit.ly/ropensci-review)
 
 ## Outline
 
