@@ -60,10 +60,11 @@ What do you think?
 
 ## View every contribution as kindness to you and others
 
-> It's like when I hold the door open for someone. (...) Criticizing how I
-held the door open ... leads to people no longer being willing to hold open
-doors for others.   
-> -- [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
+> It's like when I hold the door open for someone. (...) Criticizing how I held the
+door open ... leads to people no longer being willing to hold open doors for
+others.  
+> -- [Setting expectations for open source
+participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
 ## The way we build and review software: For authors
 
