@@ -58,19 +58,11 @@ important as the technical aspect -- Yani
 
 What do you think?
 
-## The way we communicate: On kindness
+## View every contribution as kindness to you and others
 
-> ### Everything in open source should be a series of kindnesses
-
-> You could view everything in [open source software] as a kindness that someone
-has done for you and others. Taking the altruistic view of open source keeps
-things grounded and healthy.
-
-> It's like when I hold the door open for someone. (...) When someone in open
-source makes demands it's like the person passing through the door criticizing
-how I held the door open. It ... leads to people no longer being willing to hold
-open doors for others.
-
+> It's like when I hold the door open for someone. (...) Criticizing how I
+held the door open ... leads to people no longer being willing to hold open
+doors for others.   
 > -- [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
 ## The way we build and review software: For authors
