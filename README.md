@@ -6,13 +6,20 @@
 
 ## Outline
 
-* Who are you and me?
-* How can this talk help you?
-* The way we communicate.
-* The way we build and review software.
-* Examples.
-* Questions and comments.
-* Takeaways.
+* Introduction
+  * Who are you and who am I?
+  * How can this talk help you?
+  
+* The most important stuff
+  * The way we communicate.
+  * The way we build and review software.
+
+* Wrap up
+  * Examples.
+  * Takeaways.
+  * Questions and comments.
+
+# Introduction
 
 ## Who are you?
 
@@ -37,7 +44,7 @@ Here we will:
 * Highlight what's most important.
 * Show you where you can find the rest.
 
-## The most important stuff
+# The most important stuff
 
 [rOpenSci's software-review repo](https://github.com/ropensci/software-review) links to our: 
 
@@ -89,14 +96,12 @@ open doors for others.
 * [Template for editors](https://devguide.ropensci.org/editortemplate.html).
 * [`@ropensci-review-bot help`](https://github.com/ropensci/software-review/issues/584#issuecomment-1483493673).
 
+# Wrap up
+
 ## Examples
 
 * [Kind and out of scope](https://github.com/ropensci/software-review/issues/584#issuecomment-1485388417).
 * [Kind and with constructive comments](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794).
-
-## Questions and comments
-
-What questions and comments do you have?
 
 ## Takeaways
 
@@ -106,6 +111,9 @@ What questions and comments do you have?
 
 ## Thanks
 
-Mauro Lepore
+What questions and comments do you have?
 
+--
+
+Mauro Lepore
 maurolepore@gmail.com
