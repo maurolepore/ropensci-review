@@ -99,7 +99,7 @@ participation](https://snarky.ca/setting-expectations-for-open-source-participat
 
 ## Questions and comments
 
-Thanks!
+## Thanks!
 
 Mauro Lepore
 maurolepore@gmail.com
