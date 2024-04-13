@@ -2,7 +2,7 @@
 
 *Mauro Lepore*
 
-### [bit.ly/ropensci-review](https://bit.ly/ropensci-review)
+### <https://github.com/maurolepore/ropensci-review>
 
 ## Outline
 
@@ -50,11 +50,6 @@ Here we will:
 
 * [Code of conduct](https://ropensci.org/code-of-conduct/): The way we communicate.
 * ["devguide"](https://devguide.ropensci.org/): The way we build and review software.
-
-And:
-
-* Also shows "why" bother but today we'll focus on "how" to do it.
-* Seems to lack a link to our ["stats devguide"](https://stats-devguide.ropensci.org/).
 
 ## The way we communicate: Why is it so important?
 
