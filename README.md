@@ -15,7 +15,6 @@
   * The way we build and review software.
 
 * Wrap up
-  * Examples.
   * Takeaways.
   * Questions and comments.
 
@@ -66,9 +65,15 @@ others.
 > -- [Setting expectations for open source
 participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
+
+## Examples
+
+* [Kind and out of scope](https://github.com/ropensci/software-review/issues/584#issuecomment-1485388417).
+* [Kind and with constructive comments](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794).
+
 ## The way we build and review software: For authors
 
-* [Package categories in scope for rOpenSci review](https://devguide.ropensci.org/policies.html#package-categories).
+* [Package categories in scope for rOpenSci review](https://devguide.ropensci.org/softwarereview_policies.html#package-categories).
 * [Guide to building a package](https://devguide.ropensci.org/building.html).
 * [Guide to submitting a package](https://devguide.ropensci.org/authors-guide.html).
 * [Choose between different types of submission](https://github.com/ropensci/software-review/issues/new/choose).
@@ -86,22 +91,15 @@ participation](https://snarky.ca/setting-expectations-for-open-source-participat
 
 # Wrap up
 
-## Examples
-
-* [Kind and out of scope](https://github.com/ropensci/software-review/issues/584#issuecomment-1485388417).
-* [Kind and with constructive comments](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794).
-
 ## Takeaways
 
 * The process is complex but we can help.
 * We expect all communications to be kind and respectful.
 * The "devguide" has lots of information. When you need it you'll find it.
 
-## Thanks
+## Questions and comments
 
-What questions and comments do you have?
-
---
+Thanks!
 
 Mauro Lepore
 maurolepore@gmail.com
