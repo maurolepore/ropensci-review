@@ -8,8 +8,9 @@ output: ioslides_presentation
 ## Outline
 
 -   Introduction
-    -   About you and us
-    -   Why this process, and why this talk?
+    -   Why this talk?
+    -   About you and us.
+    -   Why this process.
 -   Two crucial components
     -   The way we communicate.
     -   The way we build and review software.
@@ -18,6 +19,16 @@ output: ioslides_presentation
     -   Questions and comments.
 
 # Introduction
+
+## Why this talk?
+
+The process is complex and can feel overwhelming.
+
+This talk:
+
+-   Highlights the most important materials.
+-   Shows you where you can find the rest.
+-   Gives you the chance to ask questions.
 
 ## About you
 
@@ -77,16 +88,6 @@ rOpenSci evolved from
  - A group of people who reviewed R packages, and realized we needed a process, to
  - A group of people managed a review process, and realized ***we needed a community.***
 
-## Why this talk?
-
-The process is complex and can feel overwhelming.
-
-This talk:
-
--   Highlights the most important materials.
--   Shows you where you can find the rest.
--   Gives you the chance to ask questions.
-
 # Two crucial components
 
 ## Two crucial components
@@ -105,16 +106,6 @@ This talk:
 > "Even when someone volunteers their time, there is a cost of their time and effort."  
 > -- [Setting expectations for open source
 participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
-
-## Be kind and respectful
-
-[Example of a kind and respectful reviewer's response](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794)
-
-> "It's like when I hold the door open for someone."
->
-> "Even when someone volunteers their time, there is a cost of their time and effort."
->
-> -- [Setting expectations for open source participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
 ## The way we build and review software
 
