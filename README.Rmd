@@ -89,6 +89,8 @@ This talk:
 
 # Two crucial components
 
+## Two crucial components
+
 * The way we communicate: [Code of conduct](https://ropensci.org/code-of-conduct/).
 * The way we build and review software: ["Devguide"](https://devguide.ropensci.org/).
 
