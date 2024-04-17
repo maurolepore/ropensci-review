@@ -19,16 +19,12 @@ output: ioslides_presentation
 
 # Introduction
 
-## About you and us
+## About you
 
-About you:
-
+-   You may want to author, review, or edit an R package.
 -   You're curious about rOpenSci's review process.
--   You may want to author, review, or edit an R package for rOpenSci.
 
-## About you and us
-
-About us:
+## About us
 
 *Mauro:*
 
@@ -81,7 +77,7 @@ rOpenSci evolved from
  - A group of people who reviewed R packages, and realized we needed a process, to
  - A group of people managed a review process, and realized ***we needed a community.***
 
-## Why this talk? \| The process is complex and can feel overwhelming
+## Why this talk?
 
 The process is complex and can feel overwhelming.
 
@@ -108,8 +104,9 @@ This talk:
 > -- [Setting expectations for open source
 participation](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
 
+## Be kind and respectful
 
-## Be kind and respectful \| [Example of a kind and respectful reviewer's response](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794)
+[Example of a kind and respectful reviewer's response](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794)
 
 > "It's like when I hold the door open for someone."
 >
@@ -143,4 +140,4 @@ Other guides, templates, and tools
 
 Thank you!
 
-Mauro \| [maurolepore\@gmail.com](mailto:maurolepore@gmail.com){.email}
+Mauro and Noam
