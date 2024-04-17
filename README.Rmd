@@ -10,7 +10,7 @@ output: ioslides_presentation
 -   Introduction
     -   Why this talk?
     -   About you and us.
-    -   Why this process.
+    -   Why peer-review?
 -   Two crucial components
     -   The way we communicate.
     -   The way we build and review software.
