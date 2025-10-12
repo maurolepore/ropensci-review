@@ -1,0 +1,944 @@
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+@melvidoni hola, muchas gracias por crear este template
+lo que no encuentro del original es el topico "database access"
+--
+author:	melvidoni
+association:	contributor
+edited:	true
+status:	none
+--
+### Editor checks:
+
+- [X] **Documentation**: The package has sufficient documentation available online (README, pkgdown docs) to allow for an assessment of functionality and scope without installing the package.
+- [x] **Fit**: The package meets criteria for [fit](https://devguide.ropensci.org/policies.html#package-categories) and [overlap](https://devguide.ropensci.org/policies.html#overlap)
+- [X] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
+- [x] **License:** The package has a CRAN or OSI accepted license
+- [x] **Repository:** The repository link resolves correctly
+
+---
+
+#### Editor comments
+
+Hola @pachamaltese, muchas gracias por pilotear las revisions en español con rOpenSci. Para empezar, estos son los resultados de `goodpractice`:
+
+```
+It is good practice to
+
+  ✖ write unit tests for all functions, and all package code in general. 0% of code lines are covered by test cases.
+
+    R/connect.R:3:NA
+    R/connect.R:4:NA
+    R/connect.R:5:NA
+    R/connect.R:6:NA
+    R/connect.R:8:NA
+    ... and 178 more lines
+
+  ✖ omit "Date" in DESCRIPTION. It is not required and it gets invalid quite often. A build date will be added to the package when you perform
+    `R CMD build` on it.
+  ✖ avoid long code lines, it is bad for readability. Also, many people prefer editor windows that are about 80 characters wide. Try make your
+    lines shorter than 80 characters
+
+    R\connect.R:14:1
+    R\connect.R:27:1
+    R\connect.R:60:1
+    R\connect.R:78:1
+    R\connect.R:131:1
+    ... and 7 more lines
+
+  ✖ avoid sapply(), it is not type safe. It might return a vector, or a list, depending on the input data. Consider using vapply() instead.
+
+    R\zzz.R:11:11
+```
+
+¿Podrías trabajar en esto y avisarme cuando este listo? Por favor, dejá una respuesta detallada con los cambios.
+
+Por el momento, iré contactando candidatos a revisores.
+
+
+
+---
+
+Reviewers: @fvd and @mpaulacaldas
+Due date: 2021-2-25
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+Listo!! Implementé casi todo lo que dice goodpractice, salvo lo del `sapply()` pues si implemento el cambio se rompe todo. Con respecto a los tests, las funciones que goodpractice que dice que no están cubiertas, es porque los tests existentes indirectamente llaman a esas funciones, por ejemplo https://github.com/pachamaltese/censo2017/blob/main/tests/testthat/test-02-tables.R#L12 llama a la conexion del panel de todos modos y usa `connect.R` internamente.
+--
+author:	melvidoni
+association:	contributor
+edited:	true
+status:	none
+--
+Hola @pachamaltese, muchas gracias por los cambios.
+
+Los revisores son @anadiedrichs y @fvd. Por favor, recuerden usar la [Guía para Revisores](https://devguide.ropensci.org/reviewerguide.html) y las plantillas correspondientes para la revisión. Sabemos que las plantillas están en inglés, pero bueno... por favor, completen todo en español. Esta revisión es un piloto y aún no tenemos todo traducidor.
+
+**Fecha Límite para la revisión:** Dada la temporada del año, y que es 2020, sumado a una revisión piloto... la fecha límite para la revisión va a ser el 14 de Enero de 2021.
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+Hola @melvidoni 
+¿Existirá un potencial conflicto de interés? con ambos revisores hemos colaborado en múltiples instancias (R4DS,  plumber, shiny, etc). Yo no lo veo así, creo que tendrán la confianza para enviar feedback de lo bueno y lo malo, pero siempre es bueno avisar.
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Te conoce demasiada gente @pachamaltese! En fin, me parece genial que avises, por ahora también lo dejo a criterio de los revisores. Tenemos nuestra [Guía de Conflictos de Interés](https://devguide.ropensci.org/policies.html#coi). Si ellos no se consideran libres de COI, pido que me avisen, y volvemos al estadío en busca de revisores.
+--
+author:	FvD
+association:	none
+edited:	false
+status:	none
+--
+@melvidoni y @pachamaltese siguiendo la [Guía de Conflictos de Interés](https://devguide.ropensci.org/policies.html#coi) yo me siento libre de algún conflicto de interés.
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+> @melvidoni y @pachamaltese siguiendo la [Guía de Conflictos de Interés](https://devguide.ropensci.org/policies.html#coi) yo me siento libre de algún conflicto de interés.
+
+Excellente. Por favor, procede con la revisión entonces.
+--
+author:	stefaniebutland
+association:	member
+edited:	false
+status:	none
+--
+Hola @FvD. I'm rOpenSci's Community Manager. If you would like to join our Slack, please send me your email address to `stefanie@ropensci.org`. I invite all package authors and reviewers.
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Estimados, les recuerdo que no habrá movimiento editorial entre diciembre 19 y enero 3, como se explica en #417.
+
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+@pachamaltese Te aviso que uno de los revisores ha tenido que declinar, asi que voy a volver a la búsqueda. Esto va a demorar un poco, pero bueno.
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Saludos y disculpas la demora. El segundo revisor es @mpaulacaldas, y la fecha limite para la revisión será el **25 de Febrero**.
+--
+author:	FvD
+association:	none
+edited:	true
+status:	none
+--
+*Nota 2: este machote de revisión `review-es.md` esta disponible como pull request en el `dev-guide` [#301](https://github.com/ropensci/dev_guide/issues/301)*
+
+## Revisión del paquete
+
+*Por favor trata de marcar tantas casillas como te es posible y elabora tus argumentos en comentarios abajo de cada uno. Tu revisión no se necesita listar a estos temas, tal como se describe en la guia para revisores (Reviewer Guide)*
+
+**Por favor describe cualquier relación de trabajo que tienes/has tenido con los autores del paquete)**
+
+- [x] Como revisor confirmo que no tengo [conflictos de interés](https://devguide.ropensci.org/policies.html#coi) para poder hacer la revisión de este trabajo (si no estas seguro si tienes un conflicto por favor entra en contacto con tu editor _antes_ de arrancar con la revisión.
+
+#### Documentación
+
+El paquete incluye todos los siguiente tipos de documentación:
+
+- [ ] **Una declaración de necesidades** que claramente describe las necesidades que el software esta diseñado a resolver y el público meta que busca atender en el archivo README
+
+Hay una sección de "valor agregado" pero si interpreto el requisito de rOpenSci de forma estricta, no veo una declaración de necesidades. ¿Porque trabajar en el paquete? ¿Que carencia hay en el mundo R o el mundo de datos de Censo para justificar el esfuerzo de crear este paquete? ¿Para quien lo estas escribiendo?.
+
+Haces referencia a tu sitio web https://db-edu.pacha.dev pero esto esta en inglés. Aun si tienes que repetir muy en breve cual es la razón de hacerlo, seria bueno tenerlo aquí en español.
+
+- [ ] **Instrucciones de instalación** tanto para la versión en desarrollo incluyendo cualquier dependencia no-estándar en el archivo README
+
+Creo que seria bueno ser explícitos sobre la dependencias a nivel OS que este paquete tra. En particular para instalar `sf`, necesitamos satisfacer:
+
+```
+  Configuration failed because libudunits2.so was not found. Try installing:
+    * deb: libudunits2-dev (Debian, Ubuntu, ...)
+    * rpm: udunits2-devel (Fedora, EPEL, ...)
+    * brew: udunits (OSX)
+```
+y necesitamos gdal que puede ser [un poco engorroso](https://stackoverflow.com/questions/15248815/rgdal-package-installation), especialmente para alguien que no lo ha hecho antes. Seria bueno tener algo de comentario sobre como satisfacer esta dependencia a nivel OS.
+
+```
+configure: error: gdal-config not found or not executable.
+ERROR: configuration failed for package ‘sf’
+```
+
+- [ ] **Vignette(s)** demostrando la funcionalidad principal que ademas corren localmente
+
+Para correr el vignette hay que instalar `chilemapas` el cual requiere `rgeos` que trae otro par de dependencias a nivel OS:
+
+```
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because protobuf was not found. Try installing:
+ * deb: libprotobuf-dev (Debian, Ubuntu, etc)
+ * rpm: protobuf-devel (Fedora, EPEL)
+ * csw: protobuf_dev (Solaris)
+ * brew: protobuf (OSX)
+ ```
+y
+
+```
+--------------------------- [ANTICONF] --------------------------------
+Configuration failed because libjq was not found. Try installing:
+ * deb: libjq-dev (Debian, Ubuntu).
+ * rpm: jq-devel (Fedora, EPEL)
+ * csw: libjq_dev (Solaris)
+ * brew: jq (OSX)
+ ````
+ y
+
+```
+-----------------------------[ ANTICONF ]-------------------------------
+Configuration failed to find the libv8 engine library. Try installing:
+ * deb: libv8-dev or libnode-dev (Debian / Ubuntu)
+ * rpm: v8-devel (Fedora, EPEL)
+ * brew: v8 (OSX)
+ * csw: libv8_dev (Solaris)
+ ```
+
+Los sigo mencionando, no para fastidiar, pero porque en mi experiencia estos errores pueden llevar mucho tiempo perdido de los usuarios, mientras que es relativamente fácil anunciarlo en la documentación. Análisis espacial esta particularmente afectado por esta necesidad de cumplir muchas diferente dependencias a diferentes niveles. Además con solo lo que indica R no basta. Para instalar `protolite` (parte de las dependencias de `chilemapas`) también necesitamos:
+
+      sudo apt-get install protobuf-compiler
+
+Ademas veo *indispensable* avisar en el README que la descarga va necesitar una descarga de 750MB y va a ocupar 3GB de disco duro después de descargar. Es mucho más de una descarga habitual.
+
+El vignette necesita control de ortografía para resolver algunas tildes que faltan.
+
+- [x] **Documentación de las funciones** en la ayuda de R para todas la funciones exportadas
+
+- [x] **Ejemplos** para todas las funciones exportadas que corren localmente
+
+Los ejemplos son muy breves, reflejando la característica del paquete (que es hacer accesible un set de datos). Pero para un usuario no muy experimentado podría ser una plusvalia extender o los ejemplos o la descripción de algunas funciones como esta:
+
+![image](https://user-images.githubusercontent.com/2441145/104979085-09a46780-59c9-11eb-9670-b991aec70cc1.png)
+
+
+- [x] **Directrices comunitarias** incluyendo una guia de contribución en el archivo README o el archivo CONTRIBUTING y un archivo DESCRIPTION que incluye `URL`, `BugReports` and `Maintainer` (todas en inglés por convención y para que puedan ser autogeneradas con `Authors@R`).
+
+Cumple con requisitos mínimos. Descripción de la sección "Aportes" en el README existe pero aún no es una guia para contribuir.
+
+#### Funcionalidad
+
+- [ ] **Instalación:** La instalación se completa con éxito tal como fue documentado.
+
+Al arrancar el paquete por primera ves me da un mensaje que no recuerdo ver en el README pero que seria bueno mencionarlo allí. Cualquier texto en rojo puede confundir a un usuario con poca experiencia.  Ademas las función `censo_desc` no existe en tu paquete (probablemente te refieres a `censo_descargar_base()`)
+
+```
+> library(censo2017)
+── x La base de datos local del Censo 2017 esta vacia o daniada.
+    Descargala con censo_desc
+```
+
+Si ignoras este mensaje, o lo pasas de alto no vuelve aparecer. Pero te empieza a dar errores sin mas conexto como:
+
+      Error: no such table: zonas
+
+Seria mejor atrapara estos errores y dar un _warning_ completo, como por ejemplo: Error, no esta disponible esta tabla, estas seguro que instalaste los datos con censo_descargar_base()`.
+
+Al descargar los datos por primera vez me da un Warning que no entiendo
+
+![image](https://user-images.githubusercontent.com/2441145/104978760-3906a480-59c8-11eb-91ba-48fd46e5ba72.png)
+
+Realmente es un warning porque ahora si puedo correr el primer ejemplo en el vignette - seria bueno resolverlo para no confundir al usuario.
+
+- [x] **Funcionalidad:** Todo afirmación de funcionalidad del software se confirma como existente.
+
+Todo funciona. Sugiero mejorar el mensaje de error de `censo_tabla()`. Ahora sale un error de dplyr que puede ser más claro para la usuaria:
+
+![image](https://user-images.githubusercontent.com/2441145/104979425-dd3d1b00-59c9-11eb-8765-ecea55d89b6b.png)
+
+- [x] **Desempeño:** Toda afirmación de desempeño del software se confirma como alcanzada.
+
+- [x] **Pruebas automáticas:** Hay pruebas unitarias que cubren las funciones esenciales dentro del paquete con un rango razonable de entradas y condiciones. Todas las pruebas corren en la maquina local.
+
+Cumple con lo mínimo
+
+- [x] **Directrices de empaque**: El paquete cumple con las directrices de empaque de rOpenSci.
+
+Esto es dificil de responder con un simple si/no porque ([la lista es  larga](https://devguide.ropensci.org/building.html) ) y algunas cosas que no aplican.
+
+- Nombre breve y descriptivo - si
+- CodeMeta data - no (hasta donde puedo ver)
+- Package API
+    - Console messages - estas pueden mejorar
+    - Code Style - considera usar un máximo ancho de 80 columnas para el código en el vignette para hacerlo mas legible. Ya cumples con esto en el resto del código.
+Documentación
+    - Top level documentation - creo que falta documentación para `?censo2017` o `?censo2017-package` 
+Documentation website - available: https://pacha.dev/censo2017/
+
+- -
+
+Estimación de horas dedicadas a la revisión: 5
+
+- [x] Si la o las persona(s) autora(s) lo considera(n) apropiado, yo estoy de acuerdo con que me reconozcan como revisor del paquete (el rol "rev') en la el archivo DESCRIPTION del paquete.
+
+---
+
+### Comentarios de la revisión
+
+En mi opinión este tipo de paquetes pueden jugar un papel importante para ayudar a gente a arrancar con R. Muchas gracias por el esfuerzo que hiciste para añadir este paquete a lo que tenemos disponible en la comunidad. Paquetes como este, que combinan la funcionalidad para poder acceder datos públicos con recetas para ponerlos a generar algo útil y tangible (como mapas), bajan la barrera para trabajar con R y con datos para los interesados en el tema.
+
+La base para lograr esto esta disponible y los algunos ejemplos de uso están en el vignette. Pero creo que con una pulida a nivel de documentación este paquete puede ser más útil y más atractivo para su público meta. Este publico no se especifica aún (mira arriba la necesidad de una declaración de necesidades), pero probablemente incluye estudiantes, periodistas, personas en instituciones públicas. Para atraer a estos grupos creo indispensable incluir por ejemplo la figura que se presenta como ejemplo en el vignette:
+
+![image](https://user-images.githubusercontent.com/2441145/104980877-335f8d80-59cd-11eb-8306-7093d63a4cd1.png)
+
+Es visualmente atractivo, y además da una base contra la cual se puede ver si uno logró hacer correr todo lo que hace el paquete. No todos leen los vignette! El README es lo primero, y para algunos lo ultimo que se lee como documentación. Por eso seria bueno tener una referencia a tu website de Packagedown y el vignette dentro del README para fomentar su uso.
+
+Asimismo, desde la perspectiva de atraer usuarios de los datos del censo creo que el vignette se beneficiaría de una mejora de estilo de código para hacerlo más legible y mas emulable (copy-pasteable) para alguien que necesita construir este tipo de mapas, o usar los datos de censo para algo diferente.
+
+@melvidoni con esto concluyo mi revisión.
+
+
+
+
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+@pachamaltese La revision de @FvD está aún en proceso, así que no voy a avanzar el tag. Frans, por favor continua editando ese post hasta que la revisión esté terminada.
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+Estimados/as
+CRAN me pidió algunos cambios que implican actualizar a R 4.0 por las políticas de escribir en el home (o en el sistema de archivos). El cambio de fondo es la ruta donde se ubica la base de datos local. Aproveché además de pasar de SQLite a duckdb, lo que aumenta fuertemente la velocidad para filtrar datos censales.
+Buen finde!
+--
+author:	maelle
+association:	member
+edited:	false
+status:	none
+--
+@mpaulacaldas aqui esta la plantilla de revisión traducida por @FvD https://devdevguide.netlify.app/reviewtemplatees.html
+--
+author:	mpaulacaldas
+association:	none
+edited:	false
+status:	none
+--
+Tomo nota, gracias @maelle y @FvD!
+--
+author:	mpaulacaldas
+association:	none
+edited:	false
+status:	none
+--
+Estimados @pachamaltese @FvD @melvidoni. Encontrarán aquí mi revisión. Por favor no duden si tienen dudas.
+
+## Revisión de un paquete
+
+*Por favor trata de marcar tantas casillas como te sea posible y elabora tus argumentos en comentarios abajo de cada una. Tu revisión no esta limitada a estos temas, tal como se describe en la guia para revisores (Reviewer Guide)*
+
+**Por favor describe cualquier relación de trabajo que tengas/hayas tenido con los autores del paquete)**
+
+- [x] Como revisor confirmo que no tengo [conflictos de interés](https://devguide.ropensci.org/policies.html#coi) para poder hacer la revisión de este trabajo (si no estas segura si tienes un conflicto por favor entra en contacto con tu editor _antes_ de arrancar con la revisión.
+
+#### Documentación
+
+El paquete incluye todos los siguiente tipos de documentación:
+
+- [x] **Una declaración de necesidades** que claramente describe las necesidades que el software esta diseñado a resolver y el publico meta que busca atender en el archivo README
+
+  > El README describe el objetivo principal de manera breve: el paquete provee
+  > acceso conveniente al censo 2017, que tiene más de 17 millones de registros.
+  > 
+  > Dejo aquí, y en la sección siguiente ciertos comentarios adicionales que 
+  > creo ayudarían a mejorar la calidad del README:
+  > 
+  > - Sería útil incluir un vínculo a la página principal o a la documentación 
+  >   oficial del censo. 
+  > - El README da a entender que el paquete provee shapefiles, pero ninguna de
+  >   las tablas de la base tiene información de geometrías. Si `censo2017`
+  >   se limita a las tablas, y `chilemapas` al aspecto geográfico, debería 
+  >   estar más clara la distinción en el README.
+  > - No queda claro a partir del README cuál es la principal ventaja de la base 
+  >   SQLite (o es ahora duckdb?) con respecto a la base PostGIS. Sería bueno
+  >   mencionarlo en una frase, dado que el blog post asociado está en inglés. 
+  > - La falta de tildes/acentos en el README dificulta la lectura, y puede 
+  >   prestarse a confuciones, por ejemplo, respecto al nombre de regiones (e.g. 
+  >   Niuble versus Ñuble). Si esto es necesario (según lo que veo en el archivo 
+  >   DESCRIPTION), debería mencionarse en el README.
+
+- [ ] **Instrucciones de instalación** de la versión en desarrollo del paquete incluyendo cualquier dependencia no-estándar en el archivo README
+
+  > Dos sugerencias, dado el tamaño del paquete: 
+  > 
+  > - Debería darse información sobre los requisitos computacionales del paquete
+  >   a nivel del README, similar a lo que se hace en el mensaje de `.onAttach()`.
+  > - Puede ser también una buena idea explicar en el README que después de la
+  >   primera llamada a `library(censo2017)` se le pedirá al usuario que 
+  >   descargue la base usando `censo_descargar_base()`, y que puede modificar 
+  >   la ruta de descarga con la variable de entorno `CENSO_BBDD_DIR`.
+  
+- [ ] **Viñeta(s)** demostrando la funcionalidad principal que ademas corren localmente
+
+  > La viñeta no está disponible cuando se descarga el paquete, incluso usando 
+  > `remotes::install_github("pachamaltese/censo2017", build_vignettes = TRUE)`.
+  > Tampoco se encuentra disponible cuando hago el build de manera local.
+  > 
+  > En términos de contenidos, la viñeta presenta un buen ejemplo del tipo de
+  > exploración que haría un usuario del paquete. 
+  >
+  > Un comentario menor: Los mensajes descritos en "Notas" llegan un poco tarde, 
+  > y podrían ser incorporados antes en el texto. Por ejemplo, se podría 
+  > explicar desde antes que `tbl()` es necesario para abrir la connexión a la 
+  > base, o que el paquete `chilemapas` es necesario para la generación del 
+  > gráfico.
+
+- [ ] **Documentación de las funciones** exportadas
+
+  > `censo_bbdd()` menciona que tiene como default a `censo_path()`, que no 
+  > está exportada. Creo que sería buena idea exportarla, ya que le permitiría 
+  > al usuario verificar la ruta donde está guardada la base, y facilita el 
+  > mantenimiento de la documentación (ver siguiente nota).
+  > 
+  > `censo_descargar_base()` dice que la base se descarga por default al home, 
+  > pero en este issue comentas que cambiaste el default debido a políticas de 
+  > CRAN. Faltaría poner al día esa información en la documentación. Una 
+  > solución que requeriría baja inversión sería mencionar que la ruta se puede
+  > consultar usando `censo_path()`.
+  
+
+- [x] **Ejemplos** (que corren localmente) para todas las funciones exportadas 
+- [ ] **Directrices comunitarias** incluyendo una guia de contribución en el archivo README o el archivo CONTRIBUTING y un archivo DESCRIPTION que incluye `URL`, `BugReports` and `Maintainer` (todas en inglés por concenvión y para que puedan ser autogeneradas con `Authors@R`).
+
+  > Falta guia de contribución en el README y/o archivo CONTRIBUTING.
+
+#### Funcionalidad
+
+- [x] **Instalación:** La instalación se completa con éxito tal como fue documentada.
+
+  > Respecto al mensaje que sugiere llamar a  `censo_descargar_base()`, me 
+  > parece que sería bueno que mencione también que la ruta de descarga se 
+  > puede configurar usando la variable de entorno `CENSO_BBDD_DIR` como lo
+  > indicas en la documentación. Como usuaria, mi primera pregunta fue, ¿en 
+  > dónde se están guardando estas 6.5GB? ¿Puedo configurar la ruta? ¿Qué hago 
+  > una vez se acabe esta revisión para borrarla?
+
+- [ ] **Funcionalidad:** Toda afirmación de funcionalidad del software se confirma como existente.
+
+  > `censo_borrar_base()` no elimina el directorio especificado en 
+  > `censo_path()`, solo desconecta la base. El test correspondiente no verifica
+  > que el directorio y sus contenidos hayan sido eliminados del disco.
+  
+- [x] **Desempeño:** Toda afirmación de desempeño del software se confirma como alcanzada.
+- [x] **Pruebas automáticas:** Hay pruebas unitarias que cubren las funciones esenciales dentro del paquete con un rango razonable de entradas y condiciones. Todas las pruebas corren en la maquina local.
+- [ ] **Directrices de empaque**: El paquete cumple con las directrices de empaque de rOpenSci.
+
+  > Dejo aquí los elementos mencionados en [las directrices de empaque](https://devguide.ropensci.org/building.html#package-name-and-metadata)
+  > que considero que faltan por implementar:
+  > 
+  > - [ ] Se incluye un README, con el formato recomendado -- *Falta link a la 
+  >       viñeta o breve demostración (según criterio de multiples puntos de 
+  >       entrada). También sugiero explicar de mejor manera la interacción 
+  >       con `chilemapas`, y los requisitos de instalación, como menciono en 
+  >       mis comentarios anteriores.*
+  > - [ ] `DESCRIPTION` contiene información de la organización responsable por 
+  >       proveer los datos y un URL a la página que provee, describe o permite
+  >       el acceso a los datos -- *Se menciona al INE, pero no hay vínculo.*
+  > - [ ] Se usan los mensajes de inicio de manera estrictamente necesaria --
+  >       *Como recomiendan las guidelines, recomendaría quitar el mensaje de cómo 
+  >       citar. Recomiendo también cambiar el mensaje que le pide al usuario leer
+  >       la documentación (más detalles abajo).*
+
+
+Estimación de horas dedicadas a la revisión: 5
+
+- [x] Si la o las persona(s) autora(s) lo considera(n) apropiado, yo estoy de acuerdo con que me reconozcan como revisor del paquete (el rol "rev') en la el archivo DESCRIPTION del paquete.
+
+---
+
+### Comentarios de la revisión
+
+Muchas gracias @pachamaltese por esta excelente contribución. Como menciona @FvD, este paquete puede llegar a facilitar de manera importante el trabajo de investigadores, estudiantes, funcionarios públicos, periodistas, etc. Como lo veo, la mayor  ventaja para los futuros usuarios es que pueden tener acceso a datos  voluminosos por medio de R, sin tener que aprender a manejar otro tipo de tecnologías.
+
+Dado que el tipo de usuarios de este paquete puede incluir a bastantes principiantes, entiendo que es imperativo tener una documentación y una viñeta clara. Creo que en su estado la documentación del paquete es muy buena y llega a cumplir 90% de este objetivo. Mis sugerencias se concentran en el 10% de detalles que considero quedan faltando.
+
+Finalmente, algo que saltó a mi vista es el mensaje inicio cuando se carga el paquete, donde le pides a los usuarios que por favor lean la documentación. Este mensaje no es informativo para principiantes (porque justamente puede que no sepan cómo acceder a la documentación), y corre el riesgo de desanimar a potenciales usuarios. Si decides guardar el mensaje, sugeriría dar un poco más de ayuda al usuario, por ejemplo, indicando cómo acceder a la vignette, o dirigiendólo a la documentación en línea. Podría leer, por ejemplo: 
+
+  ```
+  Por favor, lee la documentacion. Un buen lugar para empezar es `vignette("censo2017")`.
+  ```
+  
+O de manera alternativa:
+
+  ```
+  La documentación del paquete y ejemplos de uso se encuentran en https://pacha.dev/censo2017/.
+  ```
+
+Como mencioné, noté también la falta de tíldes en la documentación. ¿Fue esto una decisión tomada debido a una sugerencia de CRAN? Esta pregunta la hago es por curiosidad propia. Si ese fue el caso, creo que sería algo útil para incluir en una eventual lista de [CRAN 'gotchas'](https://devguide.ropensci.org/building.html#crangotchas) de paquetes en otras lenguas.
+
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Muchas gracias @FvD y @mpaulacaldas por las revisiones. @pachamaltese, por favor empieza a trabajar en ellas, y postea de nuevo cuando tengas dudas o hayas hecho todos los cambios requeridos.
+--
+author:	pachadotdev
+association:	member
+edited:	true
+status:	none
+--
+@mpaulacaldas @FvD muchas gracias por sus tremendos aportes !!
+
+La semana pasada incorporé algunas de las cosas que me han mencionado y en verdad fue muy difícil hacer este paquete por tres principales razones:
+
+1. el censo original viene en formato REDATAM, por lo que solo se puede leer en Windows y hay que usar un convertidor con el que llevé todo a PostreSQL y luego a una base local
+2. ese archivo viene en un DVD, por lo que tuve que conseguir un lector externo
+3. la documentación oficial es confusa, las cartografías no tienen los mismos campos entre regiones, hay que navegar muchos sitios, etc.
+
+Cambié el mensaje de inicio, aún debo incluir la totalidad de lo que me comentan. Efectivamente las vignettes necesitan chilemapas, otro paquete que partió bajo la idea de "esto me está tomando mucho tiempo ¿quizá a cuántos más les pasa lo mismo?". 
+
+En la última iteración del paquete opté por sacar las cartografías y moverlas a otro repositorio (https://github.com/pachamaltese/cartografias-censo2017), lo cual reduce el peso de la base y así reduzco al mínimo las dependencias. De hecho chilemapas tiene toda una guía y one-liners de lo que hay que instalar para que funcione con sf y todas las dependencias.
+
+En las distintas iteraciones migré de SQLite a DuckDB, que no es tan eficiente en uso de disco, pero es muchísimo más rápido y el último push se alimenta de archivos TSV que están en el release del repositorio, de modo que si el usuario tiene duckdb 0.2.1, no habrá problema, a diferencia de cuando yo subía un .bz2 que era específico para la versión de RSQLite o DuckDB. Ahora las tablas se crean al momento de ejecutar `censo_descargar_base()`.
+
+Dejaré acá una lista de checks de todo lo que me han comentado:
+
+- [x] Agregar "La documentación del paquete y ejemplos de uso se encuentran en https://pacha.dev/censo2017/." al msje de inicio
+- [x] Tildes en la documentación *escribi todo sin acentos, estilo los ninios y la ninias*
+- [x] README: link a la viñeta
+- [ ] Explicar de mejor manera la interacción con chilemapas
+- [ ] Explicar requisitos de instalación
+- [x] Links a los multiples sitios del INE
+- [x] Quitar el mensaje de cómo citar
+- [x] Cambiar el mensaje que le pide al usuario leer la documentación (más detalles abajo)
+- [ ] `censo_borrar_base()` no elimina el directorio especificado en `censo_path()`
+- [ ] El test correspondiente no verifica que el directorio y sus contenidos hayan sido eliminados del disco
+- [x] Falta guia de contribución en el README y/o archivo CONTRIBUTING.
+- [x] Puede ser también una buena idea explicar en el README que después de la primera llamada a library(censo2017) se le pedirá al usuario que descargue la base usando censo_descargar_base(), y que puede modificar la ruta de descarga con la variable de entorno CENSO_BBDD_DIR. *Listo y con referencia a usethis::*
+- [x] Sacar referencias a los mapas, pues las cartografías las movi a otro repositorio
+- [ ] Pulida a nivel de documentación 
+- [x] Top level documentation
+- [ ] Usar codemetar::
+- [ ] Mensaje "Error, no esta disponible esta tabla, estas seguro que instalaste los datos con censo_descargar_base()`."
+- [ ] Extender o los ejemplos o la descripción de algunas funciones
+- [ ] Escribir propósito del paquete (para que usuario, etc)
+- [ ] Detallar menciones a databases.pacha.dev
+
+Por ahora, les dejo algunas interrogantes que me han surgido:
+- [ ] ¿ven valor en escribir una función (tipo anexo) que descargue/lea las cartografías detalladas? esta podría no tener una dependencia explícita, sino usar un require y con base en ello dar mensajes del tipo "instala sf para poder usar estas cartografías". De todos modos, chilemapas ya incorpora cartografías simplificadas y en formato R
+- [ ] ¿creen que es conveniente incluir la codificación de variables? la vinieta hace referencia a https://databases.pacha.dev/censo2017-descripcion-variables.xml y la verdad es que me he quebrado la cabeza intentando llevar eso a una tabla en formato tidy de la forma
+```
+|tabla   |columna|codigo|descripcion |
+|--------|-------|------|------------|
+|vivienda|p01    |1     |casa        |
+|vivienda|p01    |2     |departamento|
+|...     | ...   | ...  | ...        |
+```
+--
+author:	mpaulacaldas
+association:	none
+edited:	false
+status:	none
+--
+Gracias @pachamaltese por el resumen de los cambios a venir. Para responder a tus preguntas:
+
+> ¿ven valor en escribir una función (tipo anexo) que descargue/lea las cartografías detalladas? esta podría no tener una dependencia explícita, sino usar un require y con base en ello dar mensajes del tipo "instala sf para poder usar estas cartografías". De todos modos, chilemapas ya incorpora cartografías simplificadas y en formato R
+
+Creo que esto en verdad depende del tipo de usuario. Me imagino que para muchos, las cartografías simplificadas de `chilemapas` bastarán, pero para otros (e.g. investigadores) puede que sea útil tener el las geometrías "detalladas" o "oficiales", en especial si estas muestran cambios en límites administrativos.
+
+Mencionas también que los datos no son fáciles de extraer y tratar (tuviste que leer el formato REDATAM y limpiar las cartografías). Si este trabajo ya está hecho y tomaría relativamente poco esfuerzo crear una función que descargue estos archivos, me parecería una buena adición.
+
+> ¿creen que es conveniente incluir la codificación de variables? la vinieta hace referencia a https://databases.pacha.dev/censo2017-descripcion-variables.xml y la verdad es que me he quebrado la cabeza intentando llevar eso a una tabla en formato tidy de la forma
+
+Incluir la codificación de las variables me parece importante, aunque no tiene necesariamente que venir en formato tidy si consideras que requeriría mucho trabajo limpiar el XML. ¿Existe un PDF o sitio web con la descripción de las variables? Se podría incluir un vínculo en la documentación del paquete (e.g. README, vignette, `?censo_tabla()`).
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+> Gracias @pachamaltese por el resumen de los cambios a venir. Para responder a tus preguntas:
+> 
+> > ¿ven valor en escribir una función (tipo anexo) que descargue/lea las cartografías detalladas? esta podría no tener una dependencia explícita, sino usar un require y con base en ello dar mensajes del tipo "instala sf para poder usar estas cartografías". De todos modos, chilemapas ya incorpora cartografías simplificadas y en formato R
+> 
+> Creo que esto en verdad depende del tipo de usuario. Me imagino que para muchos, las cartografías simplificadas de `chilemapas` bastarán, pero para otros (e.g. investigadores) puede que sea útil tener el las geometrías "detalladas" o "oficiales", en especial si estas muestran cambios en límites administrativos.
+> 
+> Mencionas también que los datos no son fáciles de extraer y tratar (tuviste que leer el formato REDATAM y limpiar las cartografías). Si este trabajo ya está hecho y tomaría relativamente poco esfuerzo crear una función que descargue estos archivos, me parecería una buena adición.
+> 
+> > ¿creen que es conveniente incluir la codificación de variables? la vinieta hace referencia a https://databases.pacha.dev/censo2017-descripcion-variables.xml y la verdad es que me he quebrado la cabeza intentando llevar eso a una tabla en formato tidy de la forma
+> 
+> Incluir la codificación de las variables me parece importante, aunque no tiene necesariamente que venir en formato tidy si consideras que requeriría mucho trabajo limpiar el XML. ¿Existe un PDF o sitio web con la descripción de las variables? Se podría incluir un vínculo en la documentación del paquete (e.g. README, vignette, `?censo_tabla()`).
+
+muchas gracias, incorporé varias de las sugerencias (me faltan algunas)
+el principal problema con el REDATAM es que no es reproducible, quizá se podría portar el convertidor de C# a C++ y de allí usarlo con Rcpp.
+
+te aviso en cuanto tenga todo
+--
+author:	mpaulacaldas
+association:	none
+edited:	false
+status:	none
+--
+No entiendo tu comentario de REDATAM 😅 . Creo que en algún momento nos perdimos. En mi respuesta mencioné REDATAM solo como ejemplo. Discúlpa si lo hice sonar como si necesitaras hacer más trabajo.
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Hola @pachamaltese como va todo? Has podido revisar los cambios?
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+hola @melvidoni justamente hoy veo los cambios faltantes y les aviso con un nuevo check
+--
+author:	pachadotdev
+association:	member
+edited:	true
+status:	none
+--
+nuevos cambios logrados:
+
+- [x] Agregar "La documentación del paquete y ejemplos de uso se encuentran en https://pacha.dev/censo2017/." al msje de inicio
+- [x] Tildes en la documentación *escribi todo sin acentos, estilo los ninios y la ninias*
+- [x] README: link a la viñeta
+- [x] Explicar de mejor manera la interacción con chilemapas
+- [ ] Explicar requisitos de instalación
+- [x] Links a los multiples sitios del INE
+- [x] Quitar el mensaje de cómo citar
+- [x] Cambiar el mensaje que le pide al usuario leer la documentación (más detalles abajo)
+- [x] `censo_borrar_base()` no elimina el directorio especificado en `censo_path()`
+- [x] El test correspondiente no verifica que el directorio y sus contenidos hayan sido eliminados del disco
+- [x] Falta guia de contribución en el README y/o archivo CONTRIBUTING.
+- [x] Puede ser también una buena idea explicar en el README que después de la primera llamada a library(censo2017) se le pedirá al usuario que descargue la base usando censo_descargar_base(), y que puede modificar la ruta de descarga con la variable de entorno CENSO_BBDD_DIR. *Listo y con referencia a usethis::*
+- [x] Sacar referencias a los mapas, pues las cartografías las movi a otro repositorio
+- [ ] Pulida a nivel de documentación 
+- [x] Top level documentation
+- [x] Usar codemetar::
+- [x] Mensaje "Error, no esta disponible esta tabla, estas seguro que instalaste los datos con censo_descargar_base()`."
+- [ ] Extender o los ejemplos o la descripción de algunas funciones
+- [ ] Escribir propósito del paquete (para que usuario, etc)
+
+
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+hola @melvidoni @mpaulacaldas @FvD 
+disculpen la demora, hoy me he hecho el tiempo para revisar esto y tengo algunos cambios interesantes, el más relevante, creo, fue no depender del XML para la consulta de los significados de las variables (e.g. p01 significa "vivienda" y en p01 significa "apartamento")
+
+antes: ir a databases.pacha.dev, buscar el censo y abrir el enlace al xml https://databases.pacha.dev/censo2017-descripcion-variables.xml
+
+ahora: 
+```
+library(censo2017)
+library(dplyr)
+# con la bbdd instalada
+variables <- censo_tabla("variables")
+variables_codificacion <- censo_tabla("variables_codificacion")
+
+variables %>% filter(variable == "p01")
+variables_codificacion %>% filter(variable == "p01")
+
+# resultado
+# A tibble: 1 x 5
+  tabla     variable descripcion      tipo    rango 
+  <chr>     <chr>    <chr>            <chr>   <chr> 
+1 viviendas p01      Tipo de Vivienda integer 1 - 10
+
+# A tibble: 12 x 4
+   tabla     variable valor descripcion                                          
+   <chr>     <chr>    <int> <chr>                                                
+ 1 viviendas p01          1 Casa                                                 
+ 2 viviendas p01          2 Departamento en Edificio                             
+ 3 viviendas p01          3 Vivienda Tradicional Indígena (Ruka, Pae Pae u Otras)
+ 4 viviendas p01          4 Pieza en Casa Antigua o en Conventillo               
+ 5 viviendas p01          5 Mediagua, Mejora, Rancho o Choza                     
+ 6 viviendas p01          6 Móvil (Carpa, Casa Rodante o Similar)                
+ 7 viviendas p01          7 Otro Tipo de Vivienda Particular                     
+ 8 viviendas p01          8 Vivienda Colectiva                                   
+ 9 viviendas p01          9 Operativo Personas en Tránsito (No Es Vivienda)      
+10 viviendas p01         10 Operativo Calle (No Es Vivienda)                     
+11 viviendas p01         11 Valor Perdido                                        
+12 viviendas p01          0 No Aplica  
+```
+
+quitaré las referencias a databases.pacha.dev, es más, podría sacar el censo2017 de allí pues me resulta mucho mejor tener la versión tidy en local y dejar el servidor para las otras bases de datos que se utilizan en docencia en varias universidades
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Hola. 
+
+Excelentes revisiones @mpaulacaldas @FvD! @pachamaltese Veo que has hecho varios cambios siguiendo las revisiones. Muchas gracias por todo el trabajo!
+
+@mpaulacaldas @FvD por favor, miren los cambios que se han hecho, y comenten si consideren que el paquete está listo para ser aprobado o si aún necesita más trabajo.
+--
+author:	mpaulacaldas
+association:	none
+edited:	true
+status:	none
+--
+Hola a todos,
+
+He vuelto a hacer una revisión del paquete y confirmo que @pachamaltese ha incorporado mis principales comentarios. Por lo tanto, considero que el paquete está listo para ser aprovado 🎉  
+
+Dejo el piso entonces a @FvD para que dé su opinión. 
+
+¡Muchas gracias @pachamaltese por los cambios, y @melvidoni por facilitar el proceso de revisión!
+
+**Edit:** No lo mencioné, pero me parece excelente haber incluido las dos nuevas tablas con la codificación y los valores de las variables. Es un gran aporte que seguramente va a facilitar mucho el uso para los usuarios 😄 
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+Hola a todos
+
+Anoche he actualizado la documentacion. Hare el push dentro del dia.
+
+On Sat, Feb 13, 2021, 6:45 PM Maria Paula Caldas ***@***.***>
+wrote:
+
+> Gracias @pachamaltese <https://github.com/pachamaltese> por el resumen de
+> los cambios a venir. Para responder a tus preguntas:
+>
+> ¿ven valor en escribir una función (tipo anexo) que descargue/lea las
+> cartografías detalladas? esta podría no tener una dependencia explícita,
+> sino usar un require y con base en ello dar mensajes del tipo "instala sf
+> para poder usar estas cartografías". De todos modos, chilemapas ya
+> incorpora cartografías simplificadas y en formato R
+>
+> Creo que esto en verdad depende del tipo de usuario. Me imagino que para
+> muchos, las cartografías simplificadas de chilemapas bastarán, pero para
+> otros (e.g. investigadores) puede que sea útil tener el las geometrías
+> "detalladas" o "oficiales", en especial si estas muestran cambios en
+> límites administrativos.
+>
+> Mencionas también que los datos no son fáciles de extraer y tratar
+> (tuviste que leer el formato REDATAM y limpiar las cartografías). Si este
+> trabajo ya está hecho y tomaría relativamente poco esfuerzo crear una
+> función que descargue estos archivos, me parecería una buena adición.
+>
+> ¿creen que es conveniente incluir la codificación de variables? la vinieta
+> hace referencia a
+> https://databases.pacha.dev/censo2017-descripcion-variables.xml y la
+> verdad es que me he quebrado la cabeza intentando llevar eso a una tabla en
+> formato tidy de la forma
+>
+> Incluir la codificación de las variables me parece importante, aunque no
+> tiene necesariamente que venir en formato tidy si consideras que requeriría
+> mucho trabajo limpiar el XML. ¿Existe un PDF o sitio web con la descripción
+> de las variables? Se podría incluir un vínculo en la documentación del
+> paquete (e.g. README, vignette, ?censo_tabla()).
+>
+> —
+> You are receiving this because you were mentioned.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/ropensci/software-review/issues/414#issuecomment-778682443>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/ACM7UOMXSJSLKJYLXWYZMGDS63XH3ANCNFSM4UC4GNRQ>
+> .
+>
+
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+> Hola a todos,
+> 
+> He vuelto a hacer una revisión del paquete y confirmo que @pachamaltese ha incorporado mis principales comentarios. Por lo tanto, considero que el paquete está listo para ser aprovado tada
+> 
+> Dejo el piso entonces a @FvD para que dé su opinión.
+> 
+> ¡Muchas gracias @pachamaltese por los cambios, y @melvidoni por facilitar el proceso de revisión!
+> 
+> **Edit:** No lo mencioné, pero me parece excelente haber incluido las dos nuevas tablas con la codificación y los valores de las variables. Es un gran aporte que seguramente va a facilitar mucho el uso para los usuarios smile
+
+gracias !! si, es mejor que ver un XML que incluso a mi me resulta impactante
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+mis disculpas, he realizado el push
+--
+author:	pachadotdev
+association:	member
+edited:	true
+status:	none
+--
+nuevos cambios logrados:
+
+- [x] Agregar "La documentación del paquete y ejemplos de uso se encuentran en https://pacha.dev/censo2017/." al msje de inicio
+- [x] Tildes en la documentación *escribi todo sin acentos, estilo los ninios y la ninias*
+- [x] README: link a la viñeta
+- [x] Explicar de mejor manera la interacción con chilemapas
+- [x] Links a los multiples sitios del INE
+- [x] Quitar el mensaje de cómo citar
+- [x] Cambiar el mensaje que le pide al usuario leer la documentación (más detalles abajo)
+- [x] `censo_borrar_base()` no elimina el directorio especificado en `censo_path()`
+- [x] El test correspondiente no verifica que el directorio y sus contenidos hayan sido eliminados del disco
+- [x] Falta guia de contribución en el README y/o archivo CONTRIBUTING.
+- [x] Puede ser también una buena idea explicar en el README que después de la primera llamada a library(censo2017) se le pedirá al usuario que descargue la base usando censo_descargar_base(), y que puede modificar la ruta de descarga con la variable de entorno CENSO_BBDD_DIR. *Listo y con referencia a usethis::*
+- [x] Sacar referencias a los mapas, pues las cartografías las movi a otro repositorio
+- [x] Pulida a nivel de documentación 
+- [x] Top level documentation
+- [x] Usar codemetar::
+- [x] Mensaje "Error, no esta disponible esta tabla, estas seguro que instalaste los datos con censo_descargar_base()`."
+- [x] Extender o los ejemplos o la descripción de algunas funciones
+
+Estos creo que se lograron adecuadamente, pero me gustaría saber si hace falta darle un mayor nivel de detalle
+- [ ] Explicar requisitos de instalación
+- [ ] Escribir propósito del paquete (para que usuario, etc)
+
+
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Excelente! @pachamaltese el paquete está aprobado entonces. Te dejo el comenario en Inglés así es asequible a los otros editores.
+
+---
+
+
+
+Approved! Thanks @pachamaltese  for submitting and @mpaulacaldas @FvD  for your reviews!
+
+To-dos:
+- [ ] Transfer the repo to rOpenSci's "ropensci" GitHub organization under "Settings" in your repo.  I have invited you to a team that should allow you to do so.  You'll be made admin once you do.
+- [ ] Fix all links to the GitHub repo to point to the repo under the ropensci organization.
+- [ ] Delete your current code of conduct file if you had one since rOpenSci's default one will apply, see https://devguide.ropensci.org/collaboration.html#coc-file
+- [ ] If you already had a `pkgdown` website **and are ok relying only on [rOpenSci central docs building and branding](https://devguide.ropensci.org/ci.html#even-more-ci-ropensci-docs)**,
+    * deactivate the automatic deployment you might have set up
+    * remove styling tweaks from your pkgdown config but keep that config file
+    * replace the whole current `pkgdown` website with a [redirecting page](https://devguide.ropensci.org/redirect.html)
+    * replace your package docs URL with `https://docs.ropensci.org/package_name`
+    * In addition, in your DESCRIPTION file, include the docs link in the `URL` field alongside the link to the GitHub repository, e.g.: `URL: https://docs.ropensci.org/foobar (website) https://github.com/ropensci/foobar`
+- [ ] Fix any links in badges for CI and coverage to point to the ropensci URL. We no longer transfer Appveyor projects to ropensci Appveyor account so after transfer of your repo to rOpenSci's "ropensci" GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`. If Appveyor does not pick up new commits after transfer, you might need to delete and re-create the Appveyor project. (Repo transfers are smoother with GitHub Actions)
+- [ ] Please check you updated the package version post-review version updated and that you documented all changes in NEWS.md
+- [ ] We're starting to roll out software metadata files to all ropensci packages via the Codemeta initiative, see https://github.com/ropensci/codemetar/#codemetar for how to include it in your package, after installing the package - should be easy as running codemetar::write_codemeta() in the root of your package.
+
+Should you want to acknowledge your reviewers in your package DESCRIPTION, you can do so by making them `"rev"`-type contributors in the `Authors@R` field (with their consent).  More info on this [here](https://devguide.ropensci.org/building.html#authorship).
+
+
+Welcome aboard! We'd love to host a post about your package - either a [short introduction to it with an example](https://ropensci.org/tech-notes/) for a technical audience or [a longer post with some narrative about its development or something you learned, and an example of its use](https://ropensci.org/blog/) for a broader readership. If you are interested, consult [the blog guide](https://blogguide.ropensci.org/), and tag @stefaniebutland in your reply. She will get in touch about timing and can answer any questions.
+
+We've put together an online book with our best practice and tips, [this chapter](https://devguide.ropensci.org/collaboration.html) starts the 3d section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/ropensci/dev_guide).
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+gracias @melvidoni, ahora soy haciendo esto, debo ir haciendo pausas (le explico por interno)
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+estoy listo, mis disculpas por lo lento
+
+* [x]  Transfer the repo to rOpenSci's "ropensci" GitHub organization under "Settings" in your repo.  I have invited you to a team that should allow you to do so.  You'll be made admin once you do.
+* [x]  Fix all links to the GitHub repo to point to the repo under the ropensci organization.
+* [x]  Delete your current code of conduct file if you had one since rOpenSci's default one will apply, see https://devguide.ropensci.org/collaboration.html#coc-file
+* [x]  If you already had a `pkgdown` website **and are ok relying only on [rOpenSci central docs building and branding](https://devguide.ropensci.org/ci.html#even-more-ci-ropensci-docs)**,
+  * deactivate the automatic deployment you might have set up
+  * remove styling tweaks from your pkgdown config but keep that config file
+  * replace the whole current `pkgdown` website with a [redirecting page](https://devguide.ropensci.org/redirect.html)
+  * replace your package docs URL with `https://docs.ropensci.org/package_name`
+  * In addition, in your DESCRIPTION file, include the docs link in the `URL` field alongside the link to the GitHub repository, e.g.: `URL: https://docs.ropensci.org/foobar (website) https://github.com/ropensci/foobar`
+* [x]  Fix any links in badges for CI and coverage to point to the ropensci URL. We no longer transfer Appveyor projects to ropensci Appveyor account so after transfer of your repo to rOpenSci's "ropensci" GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropensci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`. If Appveyor does not pick up new commits after transfer, you might need to delete and re-create the Appveyor project. (Repo transfers are smoother with GitHub Actions)
+* [x]  Please check you updated the package version post-review version updated and that you documented all changes in NEWS.md
+* [x]  We're starting to roll out software metadata files to all ropensci packages via the Codemeta initiative, see https://github.com/ropensci/codemetar/#codemetar for how to include it in your package, after installing the package - should be easy as running codemetar::write_codemeta() in the root of your package.
+
+
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Gracias @pachamaltese!
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+hola @melvidoni, los badges aún dicen "en revisión" ¿cómo se cambia eso?
+--
+author:	melvidoni
+association:	contributor
+edited:	false
+status:	none
+--
+Hola. El 26 de Abril lo marqué como "approved" a este issue. ¿A qué badge te referís?
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+> Hola. El 26 de Abril lo marqué como "approved" a este issue. ¿A qué badge te referís?
+
+mis disculpas por lo lento, no sé como lograr que github notifique estas cosas
+
+acá sale como "under review"
+![image](https://user-images.githubusercontent.com/10091065/135382505-4d8a0e11-267d-47e1-b5d4-7cd3fc71b367.png)
+
+--
+author:	maelle
+association:	member
+edited:	false
+status:	none
+--
+¡Es culpa mia! Habia enviado yo un URL con error cuando añadí el badge en un PR. :grimacing: Lo siento @pachadotdev @melvidoni , https://github.com/ropensci/censo2017/pull/9 Este será verde como deberia: https://badges.ropensci.org/414_status.svg
+
+Por suerte en el futuro habrá menos razones de escribir el codigo del badge "a mano": si el editor o la editora añade les revisores con los comandos de bot https://devdevguide.netlify.app/editorguide.html#look-for-and-assign-reviewers, el bot verrá cuando ya hay 2 revisores, cambia el label y escribe un [comentario con el codigo para el badge](https://github.com/ropensci/software-review/blob/master/.buffy/templates/badge.md). :sweat_smile: 
+--
+author:	pachadotdev
+association:	member
+edited:	false
+status:	none
+--
+> ¡Es culpa mia! Habia enviado yo un URL con error cuando añadí el badge en un PR. grimacing Lo siento @pachadotdev @melvidoni , [ropensci/censo2017#9](https://github.com/ropensci/censo2017/pull/9) Este será verde como deberia: https://badges.ropensci.org/414_status.svg
+> 
+> Por suerte en el futuro habrá menos razones de escribir el codigo del badge "a mano": si el editor o la editora añade les revisores con los comandos de bot https://devdevguide.netlify.app/editorguide.html#look-for-and-assign-reviewers, el bot verrá cuando ya hay 2 revisores, cambia el label y escribe un [comentario con el codigo para el badge](https://github.com/ropensci/software-review/blob/master/.buffy/templates/badge.md). sweat_smile
+
+gracias @maelle, su español es muy bueno, siento envidia de que sabe muchos idiomas mejor que yo
+--
