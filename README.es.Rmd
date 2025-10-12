@@ -1,0 +1,138 @@
+---
+title: Cómo rOpenSci realiza la revisión por pares
+author: Mauro Lepore
+date: https://github.com/maurolepore/ropensci-review
+output: ioslides_presentation
+---
+
+## Esquema
+
+-   Introducción
+    -   ¿Por qué esta charla?
+    -   Sobre ustedes y sobre mi. 
+    -   ¿Por qué revisión por pares?
+-   Dos componentes cruciales
+    -   La forma en que nos comunicamos.
+    -   La forma en que construimos y revisamos software.
+-   Conclusión
+    -   Puntos clave.
+    -   Preguntas y comentarios.
+
+# Introducción
+
+## ¿Por qué esta charla?
+
+El proceso es complejo y puede sentirse abrumador.
+
+Esta charla:
+
+-   Destaca los materiales más importantes.
+-   Muestra dónde encontrar el resto.
+-   Brinda la oportunidad de hacer preguntas.
+
+## Sobre ustedes
+
+-   Pueden querer crear paquetes, hacer una revisión, o participar en el equipo editorial.
+-   Tienen curiosidad sobre el proceso de revisión de rOpenSci.
+
+## Sobre mi
+
+-   Desarrolló aplicaciones en R para la medicion y pronostico en marketing.
+-   Antes era biólogo.
+-   Me uní a rOpenSci en 2018 y he desempeñado diferentes roles.
+
+## [¿Por qué revisión por pares?](https://github.com/ropensci/software-review?tab=readme-ov-file#why-and-how-submit-your-package-to-ropensci)
+
+-   Impulsar la adopción de mejores prácticas y estándares
+-   Aumentar la calidad en la cola larga de aplicaciones
+-   Construir una comunidad de práctica
+
+## Impulsar la adopción de mejores prácticas y estándares
+
+_Algunas citas de quienes crean paquetes y hacen revisiones:_
+
+> "El proceso de revisión me enseñó mucho sobre diferentes herramientas disponibles para hacer mi código más robusto y resistente a cambios futuros."
+
+> "Aprendo mucho al leer detenidamente el código de otras personas y es difícil hacerlo cuando no estoy obligado a revisar tan de cerca."
+
+> "Realmente me encanta el proceso de revisión de paquetes de rOpenSci, especialmente su interactividad y cuánto se puede aprender de otros."
+
+## Aumentar la calidad en la cola larga de aplicaciones
+
+La cola larga: descargas mensuales de todos los paquetes de CRAN
+
+![](long-tail1.png){width=100%}
+
+## Aumentar la calidad en la cola larga de aplicaciones
+
+![](long-tail2.png){width=100%}
+
+## Construir una comunidad de práctica
+
+> Un grupo de personas que comparten una preocupación, un conjunto de problemas
+o una pasión por un tema, y que se reúnen para aprender a hacerlo mejor.
+
+![](comm1.png){width=100%}
+
+## ¡Esto fue algo accidental!
+
+rOpenSci evolucionó de
+
+ - Un grupo de personas que escribían paquetes de R, a
+ - Un grupo de personas que gestionaban muchos paquetes de R, y se dieron cuenta de que necesitaban revisión, a
+ - Un grupo de personas que revisaban paquetes de R, y se dieron cuenta de que necesitaban un proceso, a
+ - Un grupo de personas que gestionaban un proceso de revisión, y se dieron cuenta de que ***necesitaban una comunidad.***
+
+# Dos componentes cruciales
+
+## Dos componentes cruciales
+
+* La forma en que nos comunicamos: [Código de conducta](https://ropensci.org/code-of-conduct/).
+
+* La forma en que construimos y revisamos software: ["Devguide"](https://devguide.ropensci.org/es/).
+
+> "[Ayudar a mejorar el software] de una manera amable y respetuosa es tan importante como el aspecto técnico".
+> -- Yanina Bellini Saibene
+
+## Ser amables y respetuosos
+
+[Ejemplo de una respuesta amable y respetuosa de quien hace una revisión](https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794).
+
+> ¡Gracias por darme la oportunidad de revisar este paquete genial!
+> Me gusta mucho el tamaño corporal de las aves, así que fue agradable
+> revisar esto. Creo que el paquete en general es bueno en términos
+> de tener un objetivo bien definido, cumplir con ese objetivo y
+> documentar cómo se hace. Tengo algunas sugerencias para mejorarlo.
+> Si algo necesita aclaración, ¡no duden en contactarme!
+
+[Estableciendo expectativas para la participación en código abierto](https://snarky.ca/setting-expectations-for-open-source-participation/amp/)
+
+> "Incluso cuando alguien ofrece su tiempo como voluntario, hay un costo en su tiempo y esfuerzo."
+
+## La forma en que construimos y revisamos software
+
+Guías para quienes crean paquetes
+
+-   [Categorías de paquetes dentro del alcance de la revisión de rOpenSci](https://devguide.ropensci.org/es/softwarereview_policies.es.html#package-categories).
+-   [Packaging Guide](https://devguide.ropensci.org/pkg_building.html).
+-   [Guía para quienes crean paquetes](https://devguide.ropensci.org/es/softwarereview_author.es.html).
+-   [Elegir entre diferentes tipos de envío](https://github.com/ropensci/software-review/issues/new/choose).
+
+Otras guías, plantillas y herramientas
+
+-   [Guía para quienes hacen una revisión](https://devguide.ropensci.org/es/softwarereview_reviewer.es.html) y [para el equipo editorial](https://devguide.ropensci.org/es/softwarereview_editor.es.html).
+-   [Plantilla de revisión](https://devguide.ropensci.org/es/reviewtemplate.es.html) y [para quien hace la edición](https://devguide.ropensci.org/es/editortemplate.es.html).
+-   [Comandos del bot](https://devguide.ropensci.org/es/bot_cheatsheet.es.html).
+
+# Conclusión
+
+## Puntos clave
+
+-   Sean amables y respetuosos.
+-   El proceso es complejo pero encontrarán mucha ayuda.
+
+## ¿Preguntas y comentarios?
+
+¡Gracias!
+
+Mauro 
