@@ -1,6 +1,6 @@
 ---
 title: Cómo rOpenSci realiza la revisión por pares
-author: Mauro Lepore
+author: Mauro Lepore and Noam Ross
 date: https://github.com/maurolepore/ropensci-review
 output: ioslides_presentation
 ---
