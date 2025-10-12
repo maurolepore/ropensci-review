@@ -9,7 +9,7 @@ output: ioslides_presentation
 
 -   Introducción
     -   ¿Por qué esta charla?
-    -   Sobre ustedes y sobre mi. 
+    -   Sobre ustedes y sobre mí.
     -   ¿Por qué revisión por pares?
 -   Dos componentes cruciales
     -   La forma en que nos comunicamos.
@@ -35,9 +35,9 @@ Esta charla:
 -   Pueden querer crear paquetes, hacer una revisión, o participar en el equipo editorial.
 -   Tienen curiosidad sobre el proceso de revisión de rOpenSci.
 
-## Sobre mi
+## Sobre mí
 
--   Desarrolló aplicaciones en R para la medicion y pronostico en marketing.
+-   Desarrollo aplicaciones en R para la medición y pronóstico en marketing.
 -   Antes era biólogo.
 -   Me uní a rOpenSci en 2018 y he desempeñado diferentes roles.
 
@@ -114,7 +114,7 @@ rOpenSci evolucionó de
 Guías para quienes crean paquetes
 
 -   [Categorías de paquetes dentro del alcance de la revisión de rOpenSci](https://devguide.ropensci.org/es/softwarereview_policies.es.html#package-categories).
--   [Packaging Guide](https://devguide.ropensci.org/pkg_building.html).
+-   [Guía de empaquetado](https://devguide.ropensci.org/es/pkg_building.es.html).
 -   [Guía para quienes crean paquetes](https://devguide.ropensci.org/es/softwarereview_author.es.html).
 -   [Elegir entre diferentes tipos de envío](https://github.com/ropensci/software-review/issues/new/choose).
 
