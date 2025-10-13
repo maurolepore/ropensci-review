@@ -1,6 +1,6 @@
 # rOpenSci Software Peer Review: Ten Phases
 
-1. **Pre-Submission (Optional)** - Author discusses package scope with the EIC
+1. **Pre-Submission Enquiry (Optional)** - Author discusses package scope with the EIC
 2. **Submission** - Author creates issue, bot runs automated checks, EIC reviews and assigns editor
 3. **Editor Initial Check (~1-2 weeks)** - Editor reviews package against checklist and pkgcheck report
 4. **Finding Reviewers (~2 weeks)** - Editor searches for and recruits 2 reviewers
