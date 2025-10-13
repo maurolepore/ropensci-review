@@ -11,9 +11,9 @@
 
 ## Step-by-Step Process
 
-### Phase 1: Pre-Submission (Optional)
+### Phase 1: Pre-Submission Enquiry (Optional)
 1. **Author** considers if their package is mature enough and [in scope](https://devguide.ropensci.org/softwarereview_policies.html#package-categories)
-2. **Author** may open a [pre-submission inquiry issue](https://github.com/ropensci/software-review/issues/new/choose) to ask editors if package fits scope
+2. **Author** may open a [pre-submission enquiry issue](https://github.com/ropensci/software-review/issues/new/choose) to ask editors if package fits scope
 3. **EIC** or **Editor** responds about scope fit
 
 ### Phase 2: Submission

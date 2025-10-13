@@ -4,17 +4,17 @@
 
 1. **[Autor/a](https://devguide.ropensci.org/es/softwarereview_author.es.html)** - Persona que crea y envía el paquete
 2. **[Editor/a](https://devguide.ropensci.org/es/softwarereview_editor.es.html)** - Gestiona el proceso de revisión de un paquete específico
-3. **Editor/a en Jefe (EIC) / Líder Editorial** - Asigna editores a los envíos, maneja preguntas de alcance
+3. **Líder Editorial (LE)** - Asigna editores a los envíos, maneja preguntas de alcance
 4. **[Revisores/as](https://devguide.ropensci.org/es/softwarereview_reviewer.es.html)** (2 por paquete) - Voluntarios/as que revisan el paquete
 5. **Bot** (@ropensci-review-bot) - Sistema automatizado que ejecuta verificaciones y gestiona el flujo de trabajo
 6. **Gerente de Comunidad** - Invita a los participantes a la comunidad de Slack
 
 ## Proceso Paso a Paso
 
-### Fase 1: Pre-Envío (Opcional)
+### Fase 1: Consulta Previa al Envío (Opcional)
 1. **Autor/a** considera si su paquete está suficientemente maduro y [dentro del alcance](https://devguide.ropensci.org/es/softwarereview_policies.es.html#package-categories)
-2. **Autor/a** puede abrir un [issue de consulta previa](https://github.com/ropensci/software-review/issues/new/choose) para preguntar a los editores si el paquete está dentro del alcance
-3. **EIC** o **Editor/a** responde sobre el ajuste al alcance
+2. **Autor/a** puede abrir un [issue de consulta previa al envío](https://github.com/ropensci/software-review/issues/new/choose) para preguntar a los editores si el paquete está dentro del alcance
+3. **LE** o **Editor/a** responde sobre el ajuste al alcance
 
 ### Fase 2: Envío
 1. **Autor/a** crea un [nuevo issue](https://github.com/ropensci/software-review/issues/new/choose) en el repositorio `ropensci/software-review` usando la plantilla de envío
@@ -31,11 +31,11 @@
      - Verificaciones de complejidad ciclomática
      - Resultados de lintr
      - Resumen de "Instrucciones para Editor en Jefe"
-3. **EIC** revisa el envío y el reporte del bot
-4. **EIC** evalúa si el paquete está dentro del alcance
-5. **EIC** puede discutir el alcance con el equipo editorial en Slack si no está claro
-6. Si está fuera del alcance, **EIC** responde explicando por qué y cierra el issue
-7. Si está dentro del alcance, **EIC** asigna un **Editor/a** con el comando: `@ropensci-review-bot assign @username as editor`
+3. **LE** revisa el envío y el reporte del bot
+4. **LE** evalúa si el paquete está dentro del alcance
+5. **LE** puede discutir el alcance con el equipo editorial en Slack si no está claro
+6. Si está fuera del alcance, **LE** responde explicando por qué y cierra el issue
+7. Si está dentro del alcance, **LE** asigna un **Editor/a** con el comando: `@ropensci-review-bot assign @username as editor`
 8. **Bot** confirma la asignación y añade la etiqueta `1/editor-checks`
 
 ### Fase 3: Verificación Inicial del Editor (~1-2 semanas)
@@ -177,7 +177,7 @@ Documentación completa: [Guía de Comandos del Bot](https://devguide.ropensci.o
 |---------|--------------|-----------|
 | `@ropensci-review-bot help` | Cualquiera | Obtener ayuda con comandos del bot |
 | `@ropensci-review-bot check package` | Cualquiera | Re-ejecutar pkgcheck automatizado |
-| `@ropensci-review-bot assign @username as editor` | EIC | Asignar editor al envío |
+| `@ropensci-review-bot assign @username as editor` | LE | Asignar editor al envío |
 | `@ropensci-review-bot assign @username as reviewer` | Editor | Asignar revisor (establece fecha límite automáticamente) |
 | `@ropensci-review-bot set due date for @username to YYYY-MM-DD` | Editor | Cambiar fecha límite del revisor |
 | `@ropensci-review-bot submit review <url> time <hours>` | Editor | Registrar revisión con horas dedicadas |
