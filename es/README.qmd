@@ -1,9 +1,85 @@
 ---
 title: Cómo rOpenSci realiza la revisión por pares
 author: Mauro Lepore and Noam Ross
-date: https://github.com/maurolepore/ropensci-review
-output: ioslides_presentation
+date: TODO 
 ---
+
+# Links
+
+- https://github.com/maurolepore/ropensci-review
+- devguide: TODO
+- pkgcheck: TODO
+- https://github.com/maurolepore/ropensci-review/issues
+- documento colaborativeo: TODO
+
+# Dia 1
+
+Overview and pre-submision
+
+## Esquema
+
+Dia 1
+
+- Resumen del proceso: pre- y full-submission 
+  - Etiquetar el diagrama de flujo de trabajo
+- Roles: ej. author/a, lider editorial
+  - Match roles and descriptions
+- Categorias: ej. fuera de alcance
+  - Multiple choice: kare puede ser revisado en rOpenSci?
+    - Si. Encaja en alcance
+    - No. No encaja en el alcance
+    - Si. Es una excepcion o "edicion especial"
+- Amabilidad: ej. no aceptar un paquete
+  - Completar un comentario para hacerlo constructivo y amable
+- Herraminentas: ej. devguide, pkgcheck
+  - Encontrar y escanear las categorias para decidir si un paquetes sobre educacion encaja
+- Revision del proceso
+  - Respecto al proceso, escribir una o mas oraciones de cada tipo: que/quien/como/donde/cuando?
+    - Que? ej. Las actividades principlaes del proceso son ...
+    - Quien? ej. Los roles que participan en la pre-submision son ...
+    - Como? ej. El feedback debe ser ...
+    - Donde? ej. Todo el proceso ocurre en ....
+    - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
+- Extras
+  - Instalar pkgcheck
+  - Correr pkgcheck en un paquete
+
+Dia 2
+
+TODO
+
+
+### Resumen
+
+[Diagrama de flujo](https://lucid.app/lucidchart/8be1a782-2426-4996-b0a7-405d5b2ebf2a/edit?viewport_loc=408%2C349%2C1653%2C883%2C0_0&invitationId=inv_3c869d3f-ec90-4989-9907-2a8d60350425)
+
+TODO: Traducir
+
+### Roles
+
+### Categorias
+
+### Amabilidad
+
+### Herramientas
+
+### Revision
+
+### Extras
+
+
+
+# Dia 2
+
+Full submission
+
+### TODO
+
+...
+
+
+
+# LEFTOVERS 
 
 ## Esquema
 

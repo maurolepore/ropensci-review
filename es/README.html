@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mauro Lepore and Noam Ross">
+
+<title>Cómo rOpenSci realiza la revisión por pares</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="README_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cómo rOpenSci realiza la revisión por pares</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mauro Lepore and Noam Ross </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="links" class="level1">
+<h1>Links</h1>
+<ul>
+<li>https://github.com/maurolepore/ropensci-review</li>
+<li>devguide: TODO</li>
+<li>pkgcheck: TODO</li>
+<li>https://github.com/maurolepore/ropensci-review/issues</li>
+<li>documento colaborativeo: TODO</li>
+</ul>
+</section>
+<section id="dia-1" class="level1">
+<h1>Dia 1</h1>
+<p>Overview and pre-submision</p>
+<section id="esquema" class="level2">
+<h2 class="anchored" data-anchor-id="esquema">Esquema</h2>
+<p>Dia 1</p>
+<ul>
+<li>Resumen del proceso: pre- y full-submission
+<ul>
+<li>Etiquetar el diagrama de flujo de trabajo</li>
+</ul></li>
+<li>Roles: ej. author/a, lider editorial
+<ul>
+<li>Match roles and descriptions</li>
+</ul></li>
+<li>Categorias: ej. fuera de alcance
+<ul>
+<li>Multiple choice: kare puede ser revisado en rOpenSci?
+<ul>
+<li>Si. Encaja en alcance</li>
+<li>No.&nbsp;No encaja en el alcance</li>
+<li>Si. Es una excepcion o “edicion especial”</li>
+</ul></li>
+</ul></li>
+<li>Amabilidad: ej. no aceptar un paquete
+<ul>
+<li>Completar un comentario para hacerlo constructivo y amable</li>
+</ul></li>
+<li>Herraminentas: ej. devguide, pkgcheck
+<ul>
+<li>Encontrar y escanear las categorias para decidir si un paquetes sobre educacion encaja</li>
+</ul></li>
+<li>Revision del proceso
+<ul>
+<li>Respecto al proceso, escribir una o mas oraciones de cada tipo: que/quien/como/donde/cuando?
+<ul>
+<li>Que? ej. Las actividades principlaes del proceso son …</li>
+<li>Quien? ej. Los roles que participan en la pre-submision son …</li>
+<li>Como? ej. El feedback debe ser …</li>
+<li>Donde? ej. Todo el proceso ocurre en ….</li>
+<li>Cuando? ej. La evaluacion de alcance debe hacerse antes de …</li>
+</ul></li>
+</ul></li>
+<li>Extras
+<ul>
+<li>Instalar pkgcheck</li>
+<li>Correr pkgcheck en un paquete</li>
+</ul></li>
+</ul>
+<p>Dia 2</p>
+<p>TODO</p>
+<section id="resumen" class="level3">
+<h3 class="anchored" data-anchor-id="resumen">Resumen</h3>
+<p><a href="https://lucid.app/lucidchart/8be1a782-2426-4996-b0a7-405d5b2ebf2a/edit?viewport_loc=408%2C349%2C1653%2C883%2C0_0&amp;invitationId=inv_3c869d3f-ec90-4989-9907-2a8d60350425">Diagrama de flujo</a></p>
+<p>TODO: Traducir</p>
+</section>
+<section id="roles" class="level3">
+<h3 class="anchored" data-anchor-id="roles">Roles</h3>
+</section>
+<section id="categorias" class="level3">
+<h3 class="anchored" data-anchor-id="categorias">Categorias</h3>
+</section>
+<section id="amabilidad" class="level3">
+<h3 class="anchored" data-anchor-id="amabilidad">Amabilidad</h3>
+</section>
+<section id="herramientas" class="level3">
+<h3 class="anchored" data-anchor-id="herramientas">Herramientas</h3>
+</section>
+<section id="revision" class="level3">
+<h3 class="anchored" data-anchor-id="revision">Revision</h3>
+</section>
+<section id="extras" class="level3">
+<h3 class="anchored" data-anchor-id="extras">Extras</h3>
+</section>
+</section>
+</section>
+<section id="dia-2" class="level1">
+<h1>Dia 2</h1>
+<p>Full submission</p>
+<section id="todo" class="level3">
+<h3 class="anchored" data-anchor-id="todo">TODO</h3>
+<p>…</p>
+</section>
+</section>
+<section id="leftovers" class="level1">
+<h1>LEFTOVERS</h1>
+<section id="esquema-1" class="level2">
+<h2 class="anchored" data-anchor-id="esquema-1">Esquema</h2>
+<ul>
+<li>Introducción
+<ul>
+<li>¿Por qué esta charla?</li>
+<li>Sobre ustedes y sobre mí.</li>
+<li>¿Por qué revisión por pares?</li>
+</ul></li>
+<li>Dos componentes cruciales
+<ul>
+<li>La forma en que nos comunicamos.</li>
+<li>La forma en que construimos y revisamos software.</li>
+</ul></li>
+<li>Conclusión
+<ul>
+<li>Puntos clave.</li>
+<li>Preguntas y comentarios.</li>
+</ul></li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Resumir la estructura del taller.</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<section id="por-qué-esta-charla" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-esta-charla">¿Por qué esta charla?</h2>
+<p>El proceso es complejo y puede sentirse abrumador.</p>
+<p>Esta charla:</p>
+<ul>
+<li>Destaca los materiales más importantes.</li>
+<li>Muestra dónde encontrar el resto.</li>
+<li>Brinda la oportunidad de hacer preguntas.</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Explicar el propósito de este taller.</li>
+<li>Identificar dónde encontrar materiales clave según el rol.</li>
+</ol>
+</div>
+</section>
+<section id="sobre-ustedes" class="level2">
+<h2 class="anchored" data-anchor-id="sobre-ustedes">Sobre ustedes</h2>
+<ul>
+<li>Pueden querer crear paquetes, hacer una revisión, o participar en el equipo editorial.</li>
+<li>Tienen curiosidad sobre el proceso de revisión de rOpenSci.</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Describir los diferentes roles en el proceso de revisión (autor, revisor, editor).</li>
+</ol>
+</div>
+</section>
+<section id="sobre-mí" class="level2">
+<h2 class="anchored" data-anchor-id="sobre-mí">Sobre mí</h2>
+<ul>
+<li>Desarrollo aplicaciones en R para la medición y pronóstico en marketing.</li>
+<li>Antes era biólogo.</li>
+<li>Me uní a rOpenSci en 2018 y he desempeñado diferentes roles.</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Identificar la experiencia del instructor en diferentes roles de rOpenSci.</li>
+</ol>
+</div>
+</section>
+<section id="por-qué-revisión-por-pares" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-revisión-por-pares"><a href="https://github.com/ropensci/software-review?tab=readme-ov-file#why-and-how-submit-your-package-to-ropensci">¿Por qué revisión por pares?</a></h2>
+<ul>
+<li>Impulsar la adopción de mejores prácticas y estándares</li>
+<li>Aumentar la calidad en la cola larga de aplicaciones</li>
+<li>Construir una comunidad de práctica</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Explicar las tres razones principales de la revisión por pares de rOpenSci.</li>
+<li>Describir cómo la revisión por pares es un híbrido de revisión de código y revisión académica.</li>
+</ol>
+</div>
+</section>
+<section id="impulsar-la-adopción-de-mejores-prácticas-y-estándares" class="level2">
+<h2 class="anchored" data-anchor-id="impulsar-la-adopción-de-mejores-prácticas-y-estándares">Impulsar la adopción de mejores prácticas y estándares</h2>
+<p><em>Algunas citas de quienes crean paquetes y hacen revisiones:</em></p>
+<blockquote class="blockquote">
+<p>“El proceso de revisión me enseñó mucho sobre diferentes herramientas disponibles para hacer mi código más robusto y resistente a cambios futuros.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“Aprendo mucho al leer detenidamente el código de otras personas y es difícil hacerlo cuando no estoy obligado a revisar tan de cerca.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“Realmente me encanta el proceso de revisión de paquetes de rOpenSci, especialmente su interactividad y cuánto se puede aprender de otros.”</p>
+</blockquote>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Explicar cómo la revisión por pares impulsa la adopción de mejores prácticas.</li>
+<li>Describir el flujo bidireccional de aprendizaje entre revisores y autores.</li>
+</ol>
+</div>
+</section>
+<section id="aumentar-la-calidad-en-la-cola-larga-de-aplicaciones" class="level2">
+<h2 class="anchored" data-anchor-id="aumentar-la-calidad-en-la-cola-larga-de-aplicaciones">Aumentar la calidad en la cola larga de aplicaciones</h2>
+<p>La cola larga: descargas mensuales de todos los paquetes de CRAN</p>
+<p><img src="long-tail1.png" class="img-fluid" style="width:100.0%"></p>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Describir el problema de la cola larga en la distribución de paquetes.</li>
+<li>Explicar por qué el modelo de “muchos ojos” no funciona para paquetes menos populares.</li>
+</ol>
+</div>
+</section>
+<section id="aumentar-la-calidad-en-la-cola-larga-de-aplicaciones-1" class="level2">
+<h2 class="anchored" data-anchor-id="aumentar-la-calidad-en-la-cola-larga-de-aplicaciones-1">Aumentar la calidad en la cola larga de aplicaciones</h2>
+<p><img src="long-tail2.png" class="img-fluid" style="width:100.0%"></p>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Explicar cómo la revisión por pares garantiza calidad incluso para paquetes con pocos usuarios.</li>
+<li>Identificar por qué paquetes científicos pequeños pueden ser muy importantes.</li>
+</ol>
+</div>
+</section>
+<section id="construir-una-comunidad-de-práctica" class="level2">
+<h2 class="anchored" data-anchor-id="construir-una-comunidad-de-práctica">Construir una comunidad de práctica</h2>
+<blockquote class="blockquote">
+<p>Un grupo de personas que comparten una preocupación, un conjunto de problemas o una pasión por un tema, y que se reúnen para aprender a hacerlo mejor.</p>
+</blockquote>
+<p><img src="comm1.png" class="img-fluid" style="width:100.0%"></p>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Definir qué es una comunidad de práctica.</li>
+<li>Describir cómo el enfoque de rOpenSci difiere de la revisión académica anónima.</li>
+<li>Explicar cómo el proceso construye conexiones y colaboraciones futuras.</li>
+</ol>
+</div>
+</section>
+<section id="esto-fue-algo-accidental" class="level2">
+<h2 class="anchored" data-anchor-id="esto-fue-algo-accidental">¡Esto fue algo accidental!</h2>
+<p>rOpenSci evolucionó de</p>
+<ul>
+<li>Un grupo de personas que escribían paquetes de R, a</li>
+<li>Un grupo de personas que gestionaban muchos paquetes de R, y se dieron cuenta de que necesitaban revisión, a</li>
+<li>Un grupo de personas que revisaban paquetes de R, y se dieron cuenta de que necesitaban un proceso, a</li>
+<li>Un grupo de personas que gestionaban un proceso de revisión, y se dieron cuenta de que <strong><em>necesitaban una comunidad.</em></strong></li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Resumir la evolución de rOpenSci desde escribir paquetes hasta construir una comunidad.</li>
+<li>Explicar cómo la construcción de comunidad surgió como necesidad del proceso.</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="dos-componentes-cruciales" class="level1">
+<h1>Dos componentes cruciales</h1>
+<section id="dos-componentes-cruciales-1" class="level2">
+<h2 class="anchored" data-anchor-id="dos-componentes-cruciales-1">Dos componentes cruciales</h2>
+<ul>
+<li><p>La forma en que nos comunicamos: <a href="https://ropensci.org/code-of-conduct/">Código de conducta</a>.</p></li>
+<li><p>La forma en que construimos y revisamos software: <a href="https://devguide.ropensci.org/es/">“Devguide”</a>.</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>“[Ayudar a mejorar el software] de una manera amable y respetuosa es tan importante como el aspecto técnico”. – Yanina Bellini Saibene</p>
+</blockquote>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Identificar los dos componentes cruciales de la revisión por pares de rOpenSci.</li>
+<li>Explicar la importancia equivalente de los aspectos técnicos y sociales.</li>
+</ol>
+</div>
+</section>
+<section id="ser-amables-y-respetuosos" class="level2">
+<h2 class="anchored" data-anchor-id="ser-amables-y-respetuosos">Ser amables y respetuosos</h2>
+<p><a href="https://github.com/ropensci/software-review/issues/577#issuecomment-1494333794">Ejemplo de una respuesta amable y respetuosa de quien hace una revisión</a>.</p>
+<blockquote class="blockquote">
+<p>¡Gracias por darme la oportunidad de revisar este paquete genial! Me gusta mucho el tamaño corporal de las aves, así que fue agradable revisar esto. Creo que el paquete en general es bueno en términos de tener un objetivo bien definido, cumplir con ese objetivo y documentar cómo se hace. Tengo algunas sugerencias para mejorarlo. Si algo necesita aclaración, ¡no duden en contactarme!</p>
+</blockquote>
+<p><a href="https://snarky.ca/setting-expectations-for-open-source-participation/amp/">Estableciendo expectativas para la participación en código abierto</a></p>
+<blockquote class="blockquote">
+<p>“Incluso cuando alguien ofrece su tiempo como voluntario, hay un costo en su tiempo y esfuerzo.”</p>
+</blockquote>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Identificar las características de retroalimentación amable y respetuosa.</li>
+<li>Explicar por qué es importante reconocer el costo del tiempo voluntario.</li>
+<li>Describir cómo la transparencia pública motiva la amabilidad.</li>
+</ol>
+<section id="ejercicio" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
+<p>Analicemos esta cita. ¿Qué está haciendo el revisor en cada oración (por ejemplo, comenzar positivo, ser específico sobre lo que es bueno, etc.) que hace que este comentario sea amable?</p>
+</section>
+<section id="solución" class="level2">
+<h2 class="anchored" data-anchor-id="solución">Solución</h2>
+<p>El patrón general: <strong>Positivo → Personal → Elogio Específico → Transición Suave → Oferta de Apoyo</strong></p>
+</section>
+</div>
+</section>
+<section id="la-forma-en-que-construimos-y-revisamos-software" class="level2">
+<h2 class="anchored" data-anchor-id="la-forma-en-que-construimos-y-revisamos-software">La forma en que construimos y revisamos software</h2>
+<p>Guías para quienes crean paquetes</p>
+<ul>
+<li><a href="https://devguide.ropensci.org/es/softwarereview_policies.es.html#package-categories">Categorías de paquetes dentro del alcance de la revisión de rOpenSci</a>.</li>
+<li><a href="https://devguide.ropensci.org/es/pkg_building.es.html">Guía de empaquetado</a>.</li>
+<li><a href="https://devguide.ropensci.org/es/softwarereview_author.es.html">Guía para quienes crean paquetes</a>.</li>
+<li><a href="https://github.com/ropensci/software-review/issues/new/choose">Elegir entre diferentes tipos de envío</a>.</li>
+</ul>
+<p>Otras guías, plantillas y herramientas</p>
+<ul>
+<li><a href="https://devguide.ropensci.org/es/softwarereview_reviewer.es.html">Guía para quienes hacen una revisión</a> y <a href="https://devguide.ropensci.org/es/softwarereview_editor.es.html">para el equipo editorial</a>.</li>
+<li><a href="https://devguide.ropensci.org/es/reviewtemplate.es.html">Plantilla de revisión</a> y <a href="https://devguide.ropensci.org/es/editortemplate.es.html">para quien hace la edición</a>.</li>
+<li><a href="https://devguide.ropensci.org/es/bot_cheatsheet.es.html">Comandos del bot</a>.</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Navegar la devguide para encontrar recursos relevantes según el rol.</li>
+<li>Identificar las categorías de paquetes dentro del alcance de rOpenSci.</li>
+<li>Describir el proceso de envío usando plantillas y tipos de submisión.</li>
+<li>Usar comandos básicos del bot de revisión.</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="conclusión" class="level1">
+<h1>Conclusión</h1>
+<section id="puntos-clave" class="level2">
+<h2 class="anchored" data-anchor-id="puntos-clave">Puntos clave</h2>
+<ul>
+<li>Sean amables y respetuosos.</li>
+<li>El proceso es complejo pero encontrarán mucha ayuda.</li>
+</ul>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Resumir los dos componentes cruciales (comunicación y construcción de software).</li>
+<li>Identificar los recursos de ayuda disponibles (documentación, Slack, editores).</li>
+<li>Explicar cómo el proceso de rOpenSci difiere de la revisión académica (sin rechazo).</li>
+</ol>
+</div>
+</section>
+<section id="preguntas-y-comentarios" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas-y-comentarios">¿Preguntas y comentarios?</h2>
+<p>¡Gracias!</p>
+<p>Mauro</p>
+<div class="notes">
+<p>Objetivos de aprendizaje:</p>
+<ol type="1">
+<li>Formular preguntas sobre el proceso de revisión de rOpenSci.</li>
+<li>Identificar próximos pasos para participar en la comunidad.</li>
+</ol>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
