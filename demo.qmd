@@ -1,0 +1,145 @@
+---
+format: html
+---
+
+## Mermaid Diagram Examples
+
+### Flowchart with Different Shapes
+
+```{mermaid}
+flowchart LR
+    A[Rectangle] --> B(Rounded)
+    B --> C{Decision}
+    C -->|Yes| D[Result 1]
+    C -->|No| E[Result 2]
+    D --> F((Circle))
+    E --> F
+```
+
+### Sequence Diagram
+
+```{mermaid}
+sequenceDiagram
+    participant Author
+    participant Editor
+    participant Reviewer
+
+    Author->>Editor: Submit package
+    Editor->>Reviewer: Request review
+    Reviewer->>Editor: Submit review
+    Editor->>Author: Send feedback
+    Author->>Editor: Resubmit
+    Editor->>Author: Approve
+```
+
+### Gantt Chart
+
+```{mermaid}
+gantt
+    title Workshop Schedule
+    dateFormat HH:mm
+    section Morning
+    Introduction           :09:00, 30m
+    Presentation 1        :09:30, 45m
+    Exercise 1            :10:15, 30m
+    section Afternoon
+    Presentation 2        :13:00, 45m
+    Exercise 2            :13:45, 30m
+    Wrap-up               :14:15, 15m
+```
+
+### State Diagram
+
+```{mermaid}
+stateDiagram-v2
+    [*] --> Submitted
+    Submitted --> UnderReview
+    UnderReview --> ChangesRequested
+    UnderReview --> Approved
+    ChangesRequested --> UnderReview
+    Approved --> [*]
+```
+
+### Class Diagram
+
+```{mermaid}
+classDiagram
+    class Package {
+        +String name
+        +String version
+        +String author
+        +install()
+        +test()
+    }
+    class Review {
+        +String reviewer
+        +Date submitted
+        +approve()
+        +requestChanges()
+    }
+    Package --> Review
+```
+
+### Pie Chart
+
+```{mermaid}
+pie title Package Categories
+    "Data Access" : 45
+    "Data Visualization" : 30
+    "Data Manipulation" : 15
+    "Other" : 10
+```
+
+### Git Graph
+
+```{mermaid}
+gitGraph
+    commit
+    commit
+    branch develop
+    checkout develop
+    commit
+    commit
+    checkout main
+    merge develop
+    commit
+```
+
+### Entity Relationship Diagram
+
+```{mermaid}
+erDiagram
+    AUTHOR ||--o{ PACKAGE : submits
+    PACKAGE ||--o{ REVIEW : receives
+    REVIEWER ||--o{ REVIEW : writes
+
+    AUTHOR {
+        string name
+        string email
+    }
+    PACKAGE {
+        string name
+        string version
+    }
+    REVIEW {
+        string comments
+        date submitted
+    }
+```
+
+### Mind Map
+
+```{mermaid}
+mindmap
+  root((rOpenSci Review))
+    Submission
+      Pre-submission
+      Full submission
+    Review Process
+      Editor assignment
+      Reviewer assignment
+      Feedback
+    Approval
+      Package acceptance
+      Maintenance
+```
