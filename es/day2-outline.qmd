@@ -1,0 +1,31 @@
+```{mermaid}
+mindmap
+  root((Dia 2: Full submission))
+    Repaso del dia 1
+    Como autor/a: Preparar una submission
+      Anticipar que pasos tienen sentido
+      Identificar la categoria
+      Correr pkgcheck
+      Corregir problemas detectados por pkgcheck
+    Como autor/a: Someter un paquete
+      Completar el issue template
+    Como revisor/a: Revisar una parte del paquete
+      Anticipar la estructura del feedback constructivo y amable
+      Escribir un encabezado amable
+      Completar una parte del review-template
+      Escribir una nota sobre una sugerencia especifica
+    Como author/a: Responder al feedback
+    Detalles
+      Explora una submision real e identifica detalles/preguntas que quisieras aclarar
+        Que?
+        Quien?
+        Como?
+        Donde?
+        Cuando?
+        Por que?
+    Q&A
+    Repaso
+    Feedback
+      Que te sirvio mas?
+      Que seria aun mas util?
+```

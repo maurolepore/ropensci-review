@@ -50,31 +50,33 @@ Dia 2: Full submission
 
 - Repaso del dia 1 
 - Como autor/a: Preparar una submission
-  - Anticipar que pasos tienen sentido
+  - Anticipar/discutir que pasos tienen sentido
   - Identificar la categoria
   - Correr pkgcheck
   - Corregir problemas detectados por pkgcheck
 - Como autor/a: Someter un paquete
   - Completar el issue template
 - Como revisor/a: Revisar una parte del paquete
-  - Anticipar la estructura del feedback constructivo y amable
+  - Anticipar/discutir la estructura del feedback constructivo y amable
   - Escribir un encabezado amable
   - Completar una parte del review-template
   - Escribir una nota sobre una sugerencia especifica
 - Como author/a: Responder al feedback
+  - Modificar el paquete
+  - Escribir un commentario constructivo y amable de respuesta
 - Detalles
   - Explora una submision real e identifica detalles/preguntas que quisieras aclaras.
-    - Que?
-    - Quien?
-    - Como?
-    - Donde?
-    - Cuando?
-    - Por que?
+    - Que? ej. Un paso que no practicamos es ...
+    - Quien? ej. Tipicamente quien cambia las etiquetas del issue es ...
+    - Donde? ej. El/la editor/a busca revisore/as en ... 
+    - Como? ej. El/la editor/a contacta revisore/as mediante ... 
+    - Cuando? ej. El/la autor/a respnde a la revision cuando ... 
+    - Por que? ej. El proceso es publico y transparente porque ...
 - Q&A
-- Repaso
-- Feedback
-  - Que te sirvio mas?
-  - Que seria aun mas util?
+  - Responder/discutir tantas preguntas como sea posible 
+- Repaso del dia 2
+- Reflexion/"takeaway"
+  - Anota una cosa que te llamo la atencion 
 
 TODO
 - Ask Yani si puedo participar de una clase suya
