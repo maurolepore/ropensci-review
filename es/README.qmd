@@ -18,7 +18,7 @@ Overview and pre-submision
 
 ## Esquema
 
-Dia 1
+Dia 1: Pre-submission
 
 - Resumen del proceso: pre- y full-submission 
   - Etiquetar el diagrama de flujo de trabajo
@@ -33,18 +33,55 @@ Dia 1
   - Completar un comentario para hacerlo constructivo y amable
 - Herraminentas: ej. devguide, pkgcheck
   - Encontrar y escanear las categorias para decidir si un paquetes sobre educacion encaja
+- Q&A
 - Revision del proceso
   - Respecto al proceso, escribir una o mas oraciones de cada tipo: que/quien/como/donde/cuando?
     - Que? ej. Las actividades principlaes del proceso son ...
     - Quien? ej. Los roles que participan en la pre-submision son ...
     - Como? ej. El feedback debe ser ...
     - Donde? ej. Todo el proceso ocurre en ....
+    - Por que? e.g. La revision por pares ayuda a ...
     - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
 - Extras
   - Instalar pkgcheck
   - Correr pkgcheck en un paquete
 
-Dia 2
+Dia 2: Full submission
+
+- Repaso del dia 1 
+- Como autor/a: Preparar una submission
+  - Anticipar que pasos tienen sentido
+  - Identificar la categoria
+  - Correr pkgcheck
+  - Corregir problemas detectados por pkgcheck
+- Como autor/a: Someter un paquete
+  - Completar el issue template
+- Como revisor/a: Revisar una parte del paquete
+  - Anticipar la estructura del feedback constructivo y amable
+  - Escribir un encabezado amable
+  - Completar una parte del review-template
+  - Escribir una nota sobre una sugerencia especifica
+- Como author/a: Responder al feedback
+- Detalles
+  - Explora una submision real e identifica detalles/preguntas que quisieras aclaras.
+    - Que?
+    - Quien?
+    - Como?
+    - Donde?
+    - Cuando?
+    - Por que?
+- Q&A
+- Repaso
+- Feedback
+  - Que te sirvio mas?
+  - Que seria aun mas util?
+
+TODO
+- Ask Yani si puedo participar de una clase suya
+- Discuss outline with Yani
+- Ask Yani si donde ponder repos de practica
+
+
 
 TODO
 
