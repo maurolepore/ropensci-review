@@ -25,17 +25,14 @@ date: last-modified
 
 ## Día 2 | Enviar software para revisión
 
-- Como autor/a enviar software para revisión
-  - Identificar la categoría de un paquete
-  - Generar e interpretar el resultado de pkgcheck
-  - Corregir problemas detectados por pkgcheck
+- Ejercitar el proceso simplificado para enviar software para revisión
+  - Profundizar en alcance incluyendo software estadístico
+  - Usar pkgcheck para detectar y corregir problemas
 - Como revisor/a revisar una parte del paquete de forma constructiva y amable
-  - Escribir un encabezado
-  - Completar una parte del review-template
-  - Escribir un comentario ofreciendo una sugerencia de cambio
+  - Entender mejor el punto de vista complementario al/a autor/a.
+  - Familiarizarse con la plantilla de revisión. 
 - Como author/a responder a la revisión de forma constructiva y amable 
-  - Modificar el paquete
-  - Escribir una respuesta explicando el cambio.
+  - Practicar hacer compromisos alineados con los intereses de todas las partes. 
 - Explorar detalles del proceso y generar preguntas y respuestas
 
 # Ejercicios
