@@ -6,120 +6,13 @@ date: last-modified
 
 # Links
 
-- https://github.com/maurolepore/ropensci-review
-- devguide: TODO
-- pkgcheck: TODO
-- https://github.com/maurolepore/ropensci-review/issues
-- documento colaborativeo: TODO
-
-# Dia 1
-
-Overview and pre-submision
-
-## Esquema
-
-Dia 1: Pre-submission
-
-- Resumen del proceso: pre- y full-submission 
-  - Etiquetar el diagrama de flujo de trabajo
-- Roles: ej. author/a, lider editorial
-  - Match roles and descriptions
-- Categorias: ej. fuera de alcance
-  - Multiple choice: kare puede ser revisado en rOpenSci?
-    - Si. Encaja en alcance
-    - No. No encaja en el alcance
-    - Si. Es una excepcion o "edicion especial"
-- Amabilidad: ej. no aceptar un paquete
-  - Completar un comentario para hacerlo constructivo y amable
-- Herraminentas: ej. devguide, pkgcheck
-  - Encontrar y escanear las categorias para decidir si un paquetes sobre educacion encaja
-- Q&A
-- Revision del proceso
-  - Respecto al proceso, escribir una o mas oraciones de cada tipo: que/quien/como/donde/cuando?
-    - Que? ej. Las actividades principlaes del proceso son ...
-    - Quien? ej. Los roles que participan en la pre-submision son ...
-    - Como? ej. El feedback debe ser ...
-    - Donde? ej. Todo el proceso ocurre en ....
-    - Por que? e.g. La revision por pares ayuda a ...
-    - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
-- Extras
-  - Instalar pkgcheck
-  - Correr pkgcheck en un paquete
-
-Dia 2: Full submission
-
-- Repaso del dia 1 
-- Como autor/a: Preparar una submission
-  - Anticipar/discutir que pasos tienen sentido
-  - Identificar la categoria
-  - Correr pkgcheck
-  - Corregir problemas detectados por pkgcheck
-- Como autor/a: Someter un paquete
-  - Completar el issue template
-- Como revisor/a: Revisar una parte del paquete
-  - Anticipar/discutir la estructura del feedback constructivo y amable
-  - Escribir un encabezado amable
-  - Completar una parte del review-template
-  - Escribir una nota sobre una sugerencia especifica
-- Como author/a: Responder al feedback
-  - Modificar el paquete
-  - Escribir un commentario constructivo y amable de respuesta
-- Detalles
-  - Explora una submision real e identifica detalles/preguntas que quisieras aclaras.
-    - Que? ej. Un paso que no practicamos es ...
-    - Quien? ej. Tipicamente quien cambia las etiquetas del issue es ...
-    - Donde? ej. El/la editor/a busca revisore/as en ... 
-    - Como? ej. El/la editor/a contacta revisore/as mediante ... 
-    - Cuando? ej. El/la autor/a respnde a la revision cuando ... 
-    - Por que? ej. El proceso es publico y transparente porque ...
-- Q&A
-  - Responder/discutir tantas preguntas como sea posible 
-- Repaso del dia 2
-- Reflexion/"takeaway"
-  - Anota una cosa que te llamo la atencion 
-
-TODO
-- Ask Yani si puedo participar de una clase suya
-- Discuss outline with Yani
-- Ask Yani si donde ponder repos de practica
+- [Repositorio de practica](https://github.com/maurolepore/ropensci-review)
+- [documento colaborativeo](https://docs.google.com/document/d/1IUuTx92oxPPqdPyeA0HcMKuFqS-VjcIgGcP260VpEks/edit?usp=sharing)
+- [devguide](https://devdevguide.netlify.app/es/index.es) 
+- [pkgcheck](https://docs.ropensci.org/pkgcheck/)
 
 
-
-TODO
-
-
-### Resumen
-
-[Diagrama de flujo](https://lucid.app/lucidchart/8be1a782-2426-4996-b0a7-405d5b2ebf2a/edit?viewport_loc=408%2C349%2C1653%2C883%2C0_0&invitationId=inv_3c869d3f-ec90-4989-9907-2a8d60350425)
-
-TODO: Traducir
-
-### Roles
-
-### Categorias
-
-### Amabilidad
-
-### Herramientas
-
-### Revision
-
-### Extras
-
-
-
-# Dia 2
-
-Full submission
-
-### TODO
-
-...
-
-
-
-# LEFTOVERS 
-
+# OLD
 ## Esquema
 
 -   Introducción
