@@ -12,7 +12,6 @@ date: last-modified
 - Paquete de practica: TODO
 - Ejemplos de paquetes en Español: TODO
 
-
 # Objetivos 
 
 ##  Día 1 | Introducción y proponer software para revisión
@@ -41,77 +40,51 @@ date: last-modified
 
 # Ejercicios
 
-### Dia 1: Proponer software para revisión 
+##  Día 1 | Proponer software para revisión 
 
 - Conocer el flujo de del proceso de revisión
   - Etiquetar el [diagrama de flujo de trabajo](https://bit.ly/flujo-de-revisión)
 - Ejercitar el proceso simplificado para proponer software para revisión
   - Escribir un comendario constructivo y amable notificando que el paquete esta fuera del alcance.
-- Explorar detalles del proceso y generar preguntas y respuestas
+- Explorar detalles del proceso y generar preguntas
   - Explorar la [plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
   - Explorar issues reales etiquetados con [0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
 - Instalar pkgcheck
+- (Opcional) Repaso: Escribi reflexiones que cuenten la historia de lo que vimos
+  - Que? ej. Las actividades principlaes del proceso son ...
+  - Quien? ej. Los roles que participan en la pre-submision son ...
+  - Como? ej. El feedback debe ser ...
+  - Donde? ej. Todo el proceso ocurre en ....
+  - Por que? e.g. La revision por pares ayuda a ...
+  - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
 
+##  Día 2 | Enviar software para revisión 
 
-
-
-- Como autor/a: Preparar una pre-submission
-  - Completar el issue template 
-  - Itentificar un paquete fuera del alcance
-  - Discutir excepciones para programa de campeones
-- Feedback constructivo y amable
-  - Anticipar/discutir la estructura del feedback constructivo y amable.
-  - Escribir un comentario para cerrar la pre-submission de un paquete fuera del alcance
-  - Completar un comentario para hacerlo constructivo y amable
-- Herraminentas: ej. devguide, pkgcheck
-  - Encontrar y escanear las categorias para decidir si un paquetes sobre educacion encaja
-- Repaso del dia 1 
-  - Respecto al proceso, escribi reflexiones o preguntas que quisieras aclarar
-    - Que? ej. Las actividades principlaes del proceso son ...
-    - Quien? ej. Los roles que participan en la pre-submision son ...
-    - Como? ej. El feedback debe ser ...
-    - Donde? ej. Todo el proceso ocurre en ....
-    - Por que? e.g. La revision por pares ayuda a ...
-    - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
-- Q&A
-- Anticipo 
-  - Instalar pkgcheck
-
-### Dia 2: Enviar software para revision
-
-- Repaso del dia 1 
-  - Categorias y excepciones. Multiple choice: karel puede ser revisado en rOpenSci?
-    - Si. Encaja en alcance
-    - No. No encaja en el alcance
-    - Si. Es una excepcion o "edicion especial"
-- Como autor/a: Preparar una submission
-  - Anticipar/discutir que pasos/roles tienen sentido
-  - Identificar la categoria
-  - Correr pkgcheck
+- Repaso. El paquete [karel](https://github.com/ropensci/software-review/issues/620) enseña a programar. Su objetivo esta fuera del alcance de rOpenSci. Fue propuesto para revisión en 2023, durente el programa de campeone/as. Es correcto que haya ser revisado en rOpenSci?
+  - Si porque encaja en alcance
+  - No porque no encaja en el alcance
+  - Si porque aunque no encaja an el alcance es una excepción.
+- Como autor/a enviar software para revisión
+  - Identificar la categoría de un paquete
+  - Generar e interpretar el resultado de pkgcheck
   - Corregir problemas detectados por pkgcheck
-- Como autor/a: Someter un paquete
-  - Completar el issue template
-- Como revisor/a: Revisar una parte del paquete
-  - Anticipar/discutir la estructura del un comentario de revision constructivo y amable
-  - Escribir un encabezado amable
+- Como revisor/a revisar una parte del paquete de forma constructiva y amable
+  - Escribir un encabezado
   - Completar una parte del review-template
-  - Escribir una nota sobre una sugerencia especifica
-- Como author/a: Responder al feedback
+  - Escribir un comentario ofreciendo una sugerencia de cambio
+- (Opcional) Como author/a responder a la revisión de forma constructiva y amable 
   - Modificar el paquete
-  - Escribir un commentario constructivo y amable de respuesta
-- Detalles
-  - Explora una submision real e identifica detalles/preguntas que quisieras aclaras.
-    - Que? ej. Un paso que no practicamos es ...
-    - Quien? ej. Tipicamente quien cambia las etiquetas del issue es ...
-    - Donde? ej. El/la editor/a busca revisore/as en ... 
-    - Como? ej. El/la editor/a contacta revisore/as mediante ... 
-    - Cuando? ej. El/la autor/a respnde a la revision cuando ... 
-    - Por que? ej. El proceso es publico y transparente porque ...
-- Q&A
-  - Responder/discutir tantas preguntas como sea posible 
-- Repaso del dia 2
-- Reflexion/"takeaway"
-  - Anota una cosa que te llamo la atencion 
+  - Escribir una respuesta explicando el cambio.
+- Explorar detalles del proceso y generar preguntas
+  - Explorar issues reales etiquetados con [6/approved](https://github.com/ropensci/software-review/issues?q=state%3Aclosed%20label%3A%226%2Fapproved%22).
+- (Opcional) Repaso: Escribi reflexiones que cuenten la historia de lo que vimos
+  - Que? ej. Un paso que no practicamos es ...
+  - Quien? ej. Tipicamente quien cambia las etiquetas del issue es ...
+  - Donde? ej. El/la editor/a busca revisore/as en ... 
+  - Como? ej. El/la editor/a contacta revisore/as mediante ... 
+  - Cuando? ej. El/la autor/a respnde a la revision cuando ... 
+  - Por que? ej. El proceso es publico y transparente porque ...
+- Cierre
 
 # Preguntas
 
@@ -123,3 +96,5 @@ date: last-modified
   - Documento colaborativo
   - Workshops de Yani/Maelle
   - Repos (para ver que organizacion usan)
+- Que cierre podria tener buen impacto?
+
