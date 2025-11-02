@@ -41,14 +41,21 @@ date: last-modified
 
 # Ejercicios
 
-### Dia 1: Proponer software para revision
+### Dia 1: Proponer software para revisión 
 
-- Resumen del proceso completo
-  - Anticipar/discutir el flujo basado en el proceso en academia
-  - Etiquetar el diagrama de flujo de trabajo
-  - Conectar roles con sus descripciones
+- Conocer el flujo de del proceso de revisión
+  - Etiquetar el [diagrama de flujo de trabajo](https://bit.ly/flujo-de-revisión)
+- Ejercitar el proceso simplificado para proponer software para revisión
+  - Escribir un comendario constructivo y amable notificando que el paquete esta fuera del alcance.
+- Explorar detalles del proceso y generar preguntas y respuestas
+  - Explorar la [plantilla real de propuesta de software para revisión](https://github.com/ropensci/software-review/issues)
+  - Explorar issues reales etiquetados con [0/presubmission](https://github.com/ropensci/software-review/issues?q=is%3Aissue%20label%3A0%2Fpresubmission)
+- Instalar pkgcheck
+
+
+
+
 - Como autor/a: Preparar una pre-submission
-  - Anticipar/discutir que pasos/roles tienen sentido
   - Completar el issue template 
   - Itentificar un paquete fuera del alcance
   - Discutir excepciones para programa de campeones
