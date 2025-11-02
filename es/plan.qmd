@@ -14,7 +14,7 @@ date: last-modified
 
 # Objetivos 
 
-##  Día 1 | Introducción y proponer software para revisión
+##  Día 1: Introducción y proponer software para revisión
 
 - Conocer el flujo de del proceso de revisión
 - Ejercitar el proceso simplificado para proponer software para revisión
@@ -23,7 +23,7 @@ date: last-modified
 - Explorar detalles del proceso y generar preguntas y respuestas
 - Instalar pkgcheck
 
-## Día 2 | Enviar software para revisión
+## Día 2: Enviar software para revisión
 
 - Ejercitar el proceso simplificado para enviar software para revisión
   - Profundizar en alcance incluyendo software estadístico
@@ -37,7 +37,7 @@ date: last-modified
 
 # Ejercicios
 
-##  Día 1 | Proponer software para revisión 
+##  Día 1: Proponer software para revisión 
 
 - Conocer el flujo de del proceso de revisión
   - Etiquetar el [diagrama de flujo de trabajo](https://bit.ly/flujo-de-revisión)
@@ -55,7 +55,7 @@ date: last-modified
   - Por que? e.g. La revision por pares ayuda a ...
   - Cuando? ej. La evaluacion de alcance debe hacerse antes de ... 
 
-##  Día 2 | Enviar software para revisión 
+##  Día 2: Enviar software para revisión 
 
 - Repaso. El paquete [karel](https://github.com/ropensci/software-review/issues/620) enseña a programar. Su objetivo esta fuera del alcance de rOpenSci. Fue propuesto para revisión en 2023, durente el programa de campeone/as. Es correcto que haya ser revisado en rOpenSci?
   - Si porque encaja en alcance
